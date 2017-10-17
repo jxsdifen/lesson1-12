@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>找出几等生</title>
+</head>
+<body>
+    <div class="wapper">
+        <label for="">请输入该生分数：</label>
+        <input id="tb_score" type="text" value="0" />
+        <input id="btn_count" type="button" value="计算"/><br/><br/>
+        得为：<span id="level">？</span>等生
+    </div>
+
+    
+    <script type="text/javascript">
+        (function(){
+            var btn = document.getElementById("btn_count");
+            btn.addEventListener("click",function(){
+                var score = parseFloat(document.getElementById("tb_score").value);
+                var level = 0;
+
+                if (isNaN(score)){
+                    alert("请输入数值");
+                    return;
+                }
+                if (score<0 || score>100){
+                    alert("请输入0-100的分数");
+                    return;
+                }
+
+                if (score>=90 && score<=100){
+                    level = 1;
+                }else if(score>=80 && score<90){
+                    level = 2;
+                }else if(score>=70 && score<80){
+                    level = 3;
+                }else if(score>=60 && score<70){
+                    level = 4;
+                }else if(score>=50 && score<60){
+                    level = 5;
+                }else if(score>=40 && score<50){
+                    level = 6;
+                }else if(score>=30 && score<40){
+                    level = 7;
+                }else if(score>=20 && score<30){
+                    level = 8;
+                }else if(score>=10 && score<20){
+                    level = 9;
+                }else if(score>=0 && score<10){
+                    level = 10;
+                }
+
+                document.getElementById("level").innerText = level;
+            })
+        })();
+    </script>
+</body>
+</html>

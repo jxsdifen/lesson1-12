@@ -1,0 +1,156 @@
+/*通用 start*/
+.w-1000{
+	margin: 0 auto;
+	width: 1000px;
+}
+.mt20{margin-top: 20px;}
+.mt40{margin-top: 40px;}
+.mt50{margin-top: 50px;}
+.mb20{margin-bottom: 20px;}
+.mb40{margin-bottom: 40px;}
+.mb50{margin-bottom: 50px;}
+.mr5{margin-right: 5px!important;}
+
+.pt20{padding-top: 20px;}
+.pt40{padding-top: 40px;}
+.pt50{padding-top: 50px;}
+.pb20{padding-bottom: 20px;}
+.pb40{padding-bottom: 40px;}
+.pb50{padding-bottom: 50px;}
+
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*+height:1%;}
+
+.common-horizontal-ul{}
+.common-horizontal-ul li{float: left;display: inline-block;}
+/*通用 end*/
+
+
+.counter{
+	margin: 50px auto;
+	padding: 15px;
+	width: 430px;
+	background: #f0f0f0;
+	border: 1px solid #8e8e8e;
+	border-radius: 4px;
+	box-sizing: border-box;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+.counter .input-frame{
+	position: relative;
+}
+.counter .input-frame .input-result{
+	padding: 0 5px;
+	width: 100%;
+	height: 70px;
+	color: #323033;
+	background: #fcfee9;
+	text-align: right;
+	font-size: 42px;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+.counter .input-frame .span-save{
+	display: none;
+	position: absolute;
+	left: 5px;
+	bottom: 0;
+	font-size: 16px;
+	color: #555;
+}
+
+/*========================*/
+.counter .btn{
+	float: left;
+	display: block;
+	margin-right: 14px;
+	margin-bottom: 14px;
+	width: 68px;
+	height: 32px;
+	line-height: 32px;
+	background: #e5e5e7;
+	border: 1px solid #8e8e8e;
+	border-radius: 6px;
+	color: #555;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+.counter .btn:hover{
+	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+.counter .btn.w{
+	width: 150px;
+}
+.counter .btn.h{
+	height: 92px;
+	line-height: 92px;
+}
+.counter .btn.no-right{
+	margin-right: 0;
+}
+.counter .btn.has-right{
+	margin-right: 14px!important;
+}
+.counter .btn.small-size{
+	font-size: 18px;
+}
+.counter .btn.bg-orange{
+	color: #fff;
+	background-color: #bf5c1b; 
+}
+.counter .btn.bg-grey{
+	background-color: #8d949a;
+}
+.counter .btn.bg-black{
+	color: #fff;
+	background-color: #2f2f2f;
+}
+
+.counter-list{
+	margin: 15px 0 0 0;
+}
+.counter-list .save-list .btn:last-child{
+	margin-right: 0;
+}
+.counter-list .save-list .btn.ie-no-right{
+	margin-right: 0;
+}
+
+.num-list .btn{
+	height: 42px;
+	line-height: 42px;
+	margin-bottom: 10px;
+	font-size: 30px;
+}
+.num-list .left-sider{
+	float: left;
+	width: 314px;
+}
+.num-list .left-sider .btn:nth-child(4n){
+	margin-right: 0;
+}
+.num-list .left-sider .btn.ie-no-right{
+	margin-right: 0;
+}
+
+.num-list .right-sider{
+	float: right;
+	width: 68px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

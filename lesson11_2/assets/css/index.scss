@@ -1,0 +1,135 @@
+@import 'common';
+$color_red: #c64747;
+$color_blue: #1d238f;
+$bg_blue: #426d87;
+
+@mixin center ($w:100%) {
+    width: $w;
+	margin: 0 auto;
+}
+
+.wapper{
+	@include center();
+}
+
+.board{
+	@include center(600px);
+	background: #f0f0f0;
+
+	.board__head{
+		padding: 20px 0;
+
+		.board__head_cir{
+			display: block;
+			@include center(400px);
+			background: $bg_blue;
+			border-radius: 50%;
+
+			text-align: center;
+			line-height: 70px;
+			font-size: 40px;
+			color: #fff;
+		}
+	}
+
+	.board__body{
+		.board__list{
+			.board__item{
+				border-top: 5px solid #28293d;
+
+				.board__item_line{
+					padding: 10px 0 0 0;
+
+					.board__item_line_num{
+						float: left;
+						width: 140px;
+						line-height: 80px;
+						font-size: 80px;
+						color: $color_red;
+						text-align: center;
+					}
+					.board__item_line_info{
+						position: relative;
+						float: left;
+						font-size: 24px;
+						color: $color_blue;
+
+						.station{
+							font-size: 35px;
+						}
+						.station-cur{
+							display: inline-block;
+							width: 12px;
+							font-size: 12px;
+						}
+						.time{
+							display: inline-block;	
+							.time-item{
+								font-size: 12px;
+								span{
+									margin-left: 5px;
+								}
+							}
+						}
+
+						.arrow{
+							margin-left: 20px;
+							position: relative;
+							width: 320px;
+							height: 4px;
+							background-color: $color_red;
+
+							&:after{
+								content: '';
+								display: block;
+								position: absolute;
+								left: 320px;
+								bottom: 0;
+								width: 0;
+							    height: 0;
+							    border-bottom: 10px solid $color_red;
+   								border-right: 20px solid transparent;
+							};
+						}
+					}
+				}
+
+				.board__item_station{
+					padding: 10px 0;
+
+					.board__item_station_next{
+						float: left;
+						margin-top: 20px;
+						padding: 0 10px;
+						width: 140px;
+						text-align: center;
+						font-size: 16px;
+						color: $color_blue;
+						box-sizing: border-box;
+
+						.hotline{
+							font-size: 12px;
+							color: $color_red;
+						}
+					}
+					.board__item_station_ul{
+						float: left;
+						padding: 5px 2px;
+						background-color: $bg_blue;
+
+						li{
+							width: 20px;
+							font-size: 13px;
+							text-align: center;
+							color: #fff;
+
+							&.current{
+								color: $color_red;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>用js开发简易计算器</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/neat.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+</head>
+<body>
+    <div class="wapper">
+        <div class="counter">
+            <input id="tb_output" class="input-output" type="text" value="0" disabled>
+            <table class="table-counter" border="0" cellspacing="0" cellpadding="0">
+                <thead></thead>
+                <tbody>
+                    <tr>
+                        <td><a id="btn_ac" href="javascript:;">AC</a></td>
+                        <td><a id="btn_or" href="javascript:;">+/-</a></td>
+                        <td><a id="btn_rate" href="javascript:;">%</a></td>
+                        <td><a id="btn_devide" class="orange" href="javascript:;">/</a></td>
+                    </tr>
+                    <tr>
+                        <td><a class="num" href="javascript:;">7</a></td>
+                        <td><a class="num" href="javascript:;">8</a></td>
+                        <td><a class="num" href="javascript:;">9</a></td>
+                        <td><a id="btn_minus" class="orange" href="javascript:;">*</a></td>
+                    </tr>
+                    <tr>
+                        <td><a class="num" href="javascript:;">4</a></td>
+                        <td><a class="num" href="javascript:;">5</a></td>
+                        <td><a class="num" href="javascript:;">6</a></td>
+                        <td><a id="btn_sub" class="orange" href="javascript:;">-</a></td>
+                    </tr>
+                    <tr>
+                        <td><a class="num" href="javascript:;">1</a></td>
+                        <td><a class="num" href="javascript:;">2</a></td>
+                        <td><a class="num" href="javascript:;">3</a></td>
+                        <td><a id="btn_add" class="orange" href="javascript:;">+</a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><a class="num" href="javascript:;">0</a></td>
+                        <td><a id="btn_point" href="javascript:;">.</a></td>
+                        <td><a id="btn_equal" class="orange" href="javascript:;">=</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/index.js"></script>
+</body>
+</html>

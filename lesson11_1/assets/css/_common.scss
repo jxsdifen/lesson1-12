@@ -1,0 +1,31 @@
+//通用 start
+.w-1000{
+	margin: 0 auto;
+	width: 1000px;
+}
+.mt20{margin-top: 20px;}
+.mt40{margin-top: 40px;}
+.mt50{margin-top: 50px;}
+.mb20{margin-bottom: 20px;}
+.mb40{margin-bottom: 40px;}
+.mb50{margin-bottom: 50px;}
+
+.pt20{padding-top: 20px;}
+.pt40{padding-top: 40px;}
+.pt50{padding-top: 50px;}
+.pb20{padding-bottom: 20px;}
+.pb40{padding-bottom: 40px;}
+.pb50{padding-bottom: 50px;}
+
+.pull-left{float: left;}
+.pull-right{float: right;}
+.clearfix{
+	*height:1%;
+	&:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+}
+
+.common-horizontal-ul{
+	>li{
+		float: left;display: inline-block;
+	}
+}

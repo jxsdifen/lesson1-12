@@ -1,0 +1,54 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.box_con{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	height: 300px;
+}
+.box{
+	position: absolute;
+	display: flex;
+	display: -webkit-flex;
+	justify-content:center;
+	align-items:center;
+	-webkit-justify-content:center;
+	-webkit-align-items:center;
+	width: 100px;
+	height: 100px;
+	box-shadow: 0 2px 15px #888888;
+	border: 1px solid #fff;
+	box-sizing: border-box;
+}
+.box.one{
+	left: 100px;
+	top: 0;
+	background-color: #4077a1;
+}
+.box.two{
+	left: 0;
+	top: 100px;
+	background-color: #5d327c;
+}
+.box.three{
+	left: 100px;
+	top: 100px;
+	background-color: #f6eef7;
+}
+.box.four{
+	left: 200px;
+	top: 100px;
+	background-color: #48a93e;
+}
+.box.five{
+	left: 100px;
+	top: 200px;
+	background-color: #912531;
+}
+
+

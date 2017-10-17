@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>css盒子模型</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+    <div class="wapper">
+        <p><b>1.正常盒子与怪异盒子对比</b></p>
+        <p>(1)正常盒子</p>
+        <div class="box-normal">
+            <div class="box-con"></div>
+        </div>
+        <p>(2)怪异盒子(<span class="red">个人感觉怪异盒子好用些，加了宽高之后就不用管它了</span>)</p>
+        <div class="box-strange">
+            <div class="box-con"></div>
+        </div>
+        <p>2.弹性盒子水平分栏，垂直分栏，排序(flex)，cloumn分栏</p>
+        <p>(1)弹性盒子水平分栏</p>
+        <div class="div-flex flex-column">
+            <div class="one">1</div>
+            <div class="two">2</div>
+            <div class="three">3</div>
+            <div class="four">4</div>
+        </div>
+        <p>(2)弹性盒子垂直分栏</p>
+        <div class="div-flex flex-row">
+            <div class="one">1</div>
+            <div class="two">2</div>
+            <div class="three">3</div>
+            <div class="four">4</div>
+        </div>
+        <p>(3)排序(flex)</p>
+        <div class="div-flex flex-row flex-order">
+            <div class="one">1</div>
+            <div class="two">2</div>
+            <div class="three">3</div>
+            <div class="four">4</div>
+        </div>
+        <p>(4)cloumn分栏(<span class="red">一加图片分得不好看，感觉应该用的不会太多)</span></p>
+        <div class="div-column">
+            <img src="http://mat1.gtimg.com/sports/xeegao/sjb0504.jpg" alt="" width="150px"/>
+            中国足协之所以如此重视这个职位，除了希望在世界足坛拥有更多话语权外，更希望借此为中国申办世界杯做铺垫，2030年或2034年将是中国举办世界杯的最佳时机。 张剑当选FIFA执委后 将提升中国足球在世界足坛的话语权 再出现幺蛾子的可能性已变得极小 2015年年底，国际足联进行改革，将原来的国际足联执委会改为理事会，成员人数也从原来的25增加到了37人。原有亚洲区理事名额将从原来的4个变成7个，其中1个名额限定为女性。 
+            <img src="http://img1.gtimg.com/sports/pics/hv1/106/16/2207/143514361.jpg" alt="" width="150"/>过去4名国际足联亚洲理事成员分别是：巴林的萨尔曼（国际足联副主席）、科威特的法赫德、马来西亚的阿卜杜拉和日本的田岛幸三。其中法赫德的理事年限已到，需要重新参加竞选，他同张剑、韩国足协主席郑梦奎、菲律宾足协主席阿拉内塔一起竞争3个国际足联理事名额。虽然竞争并不激烈，但4人当中肯定会有1人落选。
+        </div>
+
+
+        <p><b>3.旧版弹性盒子居中布局</b></p>
+        <p class="red">在水平居中时，在firefox上单一张图片就会被拉伸，可以用firefox看到如下？</p>
+        <div class="old-box">
+            <img src="http://mat1.gtimg.com/sports/xeegao/sjb0504.jpg" alt="" width="150px"/>
+        </div>
+        <p class="red">不知道为什么要给它套上个div，定义宽度才行</p>
+        <div class="old-box">
+            <div style="width:150px;">
+                <img src="http://mat1.gtimg.com/sports/xeegao/sjb0504.jpg" alt="" width="150px"/>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

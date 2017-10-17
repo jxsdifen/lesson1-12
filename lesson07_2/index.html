@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>开发新版极客学院首页</title>
+	<link rel="stylesheet" href="assets/css/neat.css">
+	<link rel="stylesheet" href="assets/css/jk.css">
+</head>
+<body>
+	<div class="wapper">
+		<!-- 头部 start -->
+		<div class="header">
+			<div class="header-con w-1000">
+				<a class="logo" href="http://www.jikexueyuan.com/">
+					<img src="assets/images/logo.png" alt="logo">
+				</a>
+				<nav class="pull-left">
+					<ul class="common-horizontal-ul header-nav">
+						<li><a href="javascript:;">首页</a></li>
+						<li><a href="javascript:;">职业学院<i class="slide-icon"></i></a>
+							<ul class="header-nav-two">
+								<li><a href="http://www.jikexueyuan.com/zhiye/web"><span class="web-icon"></span>Web前端工程师</a></li>
+								<li><a href="http://www.jikexueyuan.com/zhiye/web"><span class="web-icon"></span>Android工程师</a></li>
+								<li><a href="http://www.jikexueyuan.com/zhiye/web"><span class="web-icon"></span>iOS工程师</a></li>
+								<li><a href="http://www.jikexueyuan.com/zhiye/web"><span class="web-icon"></span>Python工程师</a></li>
+								<li><a href="http://www.jikexueyuan.com/zhiye/web"><span class="web-icon"></span>Golang前端工程师</a></li>
+								<li><a href="http://www.jikexueyuan.com/zhiye/web"><span class="web-icon"></span>微信小程序</a></li>
+								<li><a href="http://www.jikexueyuan.com/zhiye/web"><span class="web-icon"></span>PHP工程师</a></li>
+							</ul>
+						</li>
+						<li><a href="javascript:;">课程<i class="slide-icon"></i></a>
+							<ul class="header-nav-two">
+								<li><a href="http://www.jikexueyuan.com/zhiye/web">课程库</a></li>
+								<li><a href="http://www.jikexueyuan.com/zhiye/web">职业路径</a></li>
+								<li><a href="http://www.jikexueyuan.com/zhiye/web">知识体系图</a></li>
+								<li><a href="http://www.jikexueyuan.com/zhiye/web">系列课程</a></li>
+								<li><a href="http://www.jikexueyuan.com/zhiye/web">企业专区</a></li>
+							</ul>
+						</li>
+						<li><a href="javascript:;">社区<i class="slide-icon"></i></a>
+							<ul class="header-nav-two">
+								<li><a href="http://www.jikexueyuan.com/zhiye/web">技术问答</a></li>
+								<li><a href="http://www.jikexueyuan.com/zhiye/web">Wiki</a></li>
+								<li><a href="http://www.jikexueyuan.com/zhiye/web">社群</a></li>
+								<li><a href="http://www.jikexueyuan.com/zhiye/web">资料下载</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<div class="icon-list pull-right">
+					<span class="icon-search"></span>
+					<span class="icon-app"></span>
+					<span class="icon-warn"></span>
+					<span class="icon-user"></span>
+				</div>
+				<div class="search-frame">
+					<span class="icon-search"></span>
+					<input class="input-search" type="text" value="" placeholder="搜索课程，问答或Wiki">
+					<span class="icon-close">x</span>
+				</div>
+			</div>
+		</div>
+		<!-- 头部 end -->
+
+		<!-- 正文 start -->
+		<div class="jk-container pt20 pb50">
+			<div class="jk-main w-1000">
+				<!-- 课程 start -->
+				<div class="jk-course clearfix">
+					<!--课程导航 start-->
+					<div class="jk-course-nav pull-left">
+						<ul class="jk-course-nav-one">
+							<li class="on">
+								<a href="javascript:;"><i></i>课程库</a>
+								<ul class="jk-course-nav-two">
+									<li><a href="javascript:;">前端开发</a>
+										<div class="jk-course-nav-three">
+											<div class="nav-three-item">
+												<a href="javascript:;">前端开发</a>
+												<ul class="nav-item-ul clearfix">
+													<li><a href="//www.jikexueyuan.com/course/html/" cgid="76">HTML</a></li>
+													<li><a href="//www.jikexueyuan.com/course/css/" cgid="77">CSS</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/javascript/" cgid="78">JavaScript</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/html5/" cgid="79">HTML5</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/css3/" cgid="80">CSS3</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/prospective/" cgid="81">技术前瞻</a></li>
+												</ul>
+											</div>
+											<div class="nav-three-item">
+												<a href="javascript:;">前端进阶</a>
+												<ul class="nav-item-ul clearfix">
+													<li><a href="//www.jikexueyuan.com/course/typescript/" cgid="97">Typescript</a></li>
+                                    				<li><a href="//www.jikexueyuan.com/course/security/" cgid="98">前端安全</a></li>
+                                    				<li><a href="//www.jikexueyuan.com/course/practice/" cgid="99">项目实战</a></li>
+												</ul>
+											</div>
+											<div class="nav-three-item">
+												<a href="javascript:;">前端框架</a>
+												<ul class="nav-item-ul clearfix">
+                                    				<li><a href="//www.jikexueyuan.com/course/jquery/" cgid="82">jQuery</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/jqueryui/" cgid="83">jQuery UI</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/jquerymobile/" cgid="84">jQuery Mobile</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/extjs/" cgid="85">Ext JS</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/angularjs/" cgid="86">AngularJS</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/reactjs/" cgid="87">ReactJS</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/bootstrap/" cgid="94">Bootstrap</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/reactnative/" cgid="371">React Native</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/backbone/" cgid="372">Backbone</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/threejs/" cgid="373">Three.js</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/mootools/" cgid="374">MooTools</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/compass/" cgid="375">Compass</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li><a href="javascript:;">移动开发</a>
+										<div class="jk-course-nav-three">
+											<div class="nav-three-item">
+												<a href="javascript:;">前端开发</a>
+												<ul class="nav-item-ul clearfix">
+													<li><a href="//www.jikexueyuan.com/course/html/" cgid="76">HTML</a></li>
+													<li><a href="//www.jikexueyuan.com/course/css/" cgid="77">CSS</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/javascript/" cgid="78">JavaScript</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/html5/" cgid="79">HTML5</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/css3/" cgid="80">CSS3</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/prospective/" cgid="81">技术前瞻</a></li>
+												</ul>
+											</div>
+											<div class="nav-three-item">
+												<a href="javascript:;">前端进阶</a>
+												<ul class="nav-item-ul clearfix">
+													<li><a href="//www.jikexueyuan.com/course/typescript/" cgid="97">Typescript</a></li>
+                                    				<li><a href="//www.jikexueyuan.com/course/security/" cgid="98">前端安全</a></li>
+                                    				<li><a href="//www.jikexueyuan.com/course/practice/" cgid="99">项目实战</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li><a href="javascript:;">后端开发</a>
+										<div class="jk-course-nav-three">
+											<div class="nav-three-item">
+												<a href="javascript:;">前端开发</a>
+												<ul class="nav-item-ul clearfix">
+													<li><a href="//www.jikexueyuan.com/course/html/" cgid="76">HTML</a></li>
+													<li><a href="//www.jikexueyuan.com/course/css/" cgid="77">CSS</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/javascript/" cgid="78">JavaScript</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/html5/" cgid="79">HTML5</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/css3/" cgid="80">CSS3</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/prospective/" cgid="81">技术前瞻</a></li>
+												</ul>
+											</div>
+											<div class="nav-three-item">
+												<a href="javascript:;">前端进阶</a>
+												<ul class="nav-item-ul clearfix">
+													<li><a href="//www.jikexueyuan.com/course/typescript/" cgid="97">Typescript</a></li>
+                                    				<li><a href="//www.jikexueyuan.com/course/security/" cgid="98">前端安全</a></li>
+                                    				<li><a href="//www.jikexueyuan.com/course/practice/" cgid="99">项目实战</a></li>
+												</ul>
+											</div>
+											<div class="nav-three-item">
+												<a href="javascript:;">前端框架</a>
+												<ul class="nav-item-ul clearfix">
+                                    				<li><a href="//www.jikexueyuan.com/course/jquery/" cgid="82">jQuery</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/jqueryui/" cgid="83">jQuery UI</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/jquerymobile/" cgid="84">jQuery Mobile</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/extjs/" cgid="85">Ext JS</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/angularjs/" cgid="86">AngularJS</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/reactjs/" cgid="87">ReactJS</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/bootstrap/" cgid="94">Bootstrap</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/reactnative/" cgid="371">React Native</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/backbone/" cgid="372">Backbone</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/threejs/" cgid="373">Three.js</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/mootools/" cgid="374">MooTools</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/compass/" cgid="375">Compass</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li><a href="javascript:;">人工智能</a>
+										<div class="jk-course-nav-three">
+											<div class="nav-three-item">
+												<a href="javascript:;">前端开发</a>
+												<ul class="nav-item-ul clearfix">
+													<li><a href="//www.jikexueyuan.com/course/html/" cgid="76">HTML</a></li>
+													<li><a href="//www.jikexueyuan.com/course/css/" cgid="77">CSS</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/javascript/" cgid="78">JavaScript</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/html5/" cgid="79">HTML5</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/css3/" cgid="80">CSS3</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/prospective/" cgid="81">技术前瞻</a></li>
+												</ul>
+											</div>
+											<div class="nav-three-item">
+												<a href="javascript:;">前端进阶</a>
+												<ul class="nav-item-ul clearfix">
+													<li><a href="//www.jikexueyuan.com/course/typescript/" cgid="97">Typescript</a></li>
+                                    				<li><a href="//www.jikexueyuan.com/course/security/" cgid="98">前端安全</a></li>
+                                    				<li><a href="//www.jikexueyuan.com/course/practice/" cgid="99">项目实战</a></li>
+												</ul>
+											</div>
+											<div class="nav-three-item">
+												<a href="javascript:;">前端框架</a>
+												<ul class="nav-item-ul clearfix">
+                                    				<li><a href="//www.jikexueyuan.com/course/jquery/" cgid="82">jQuery</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/jqueryui/" cgid="83">jQuery UI</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/jquerymobile/" cgid="84">jQuery Mobile</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/extjs/" cgid="85">Ext JS</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/angularjs/" cgid="86">AngularJS</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/reactjs/" cgid="87">ReactJS</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/bootstrap/" cgid="94">Bootstrap</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/reactnative/" cgid="371">React Native</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/backbone/" cgid="372">Backbone</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/threejs/" cgid="373">Three.js</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/mootools/" cgid="374">MooTools</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/compass/" cgid="375">Compass</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li><a href="javascript:;">智能硬件 / 物联网</a>
+										<div class="jk-course-nav-three">
+											<div class="nav-three-item">
+												<a href="javascript:;">前端开发</a>
+												<ul class="nav-item-ul clearfix">
+													<li><a href="//www.jikexueyuan.com/course/html/" cgid="76">HTML</a></li>
+													<li><a href="//www.jikexueyuan.com/course/css/" cgid="77">CSS</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/javascript/" cgid="78">JavaScript</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/html5/" cgid="79">HTML5</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/css3/" cgid="80">CSS3</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/prospective/" cgid="81">技术前瞻</a></li>
+												</ul>
+											</div>
+											<div class="nav-three-item">
+												<a href="javascript:;">前端进阶</a>
+												<ul class="nav-item-ul clearfix">
+													<li><a href="//www.jikexueyuan.com/course/typescript/" cgid="97">Typescript</a></li>
+                                    				<li><a href="//www.jikexueyuan.com/course/security/" cgid="98">前端安全</a></li>
+                                    				<li><a href="//www.jikexueyuan.com/course/practice/" cgid="99">项目实战</a></li>
+												</ul>
+											</div>
+											<div class="nav-three-item">
+												<a href="javascript:;">前端框架</a>
+												<ul class="nav-item-ul clearfix">
+                                    				<li><a href="//www.jikexueyuan.com/course/jquery/" cgid="82">jQuery</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/jqueryui/" cgid="83">jQuery UI</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/jquerymobile/" cgid="84">jQuery Mobile</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/extjs/" cgid="85">Ext JS</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/angularjs/" cgid="86">AngularJS</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/reactjs/" cgid="87">ReactJS</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/bootstrap/" cgid="94">Bootstrap</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/reactnative/" cgid="371">React Native</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/backbone/" cgid="372">Backbone</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/threejs/" cgid="373">Three.js</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/mootools/" cgid="374">MooTools</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/compass/" cgid="375">Compass</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li><a href="javascript:;">设计 / 产品 / 测试</a>
+										<div class="jk-course-nav-three">
+											<div class="nav-three-item">
+												<a href="javascript:;">前端开发</a>
+												<ul class="nav-item-ul clearfix">
+													<li><a href="//www.jikexueyuan.com/course/html/" cgid="76">HTML</a></li>
+													<li><a href="//www.jikexueyuan.com/course/css/" cgid="77">CSS</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/javascript/" cgid="78">JavaScript</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/html5/" cgid="79">HTML5</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/css3/" cgid="80">CSS3</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/prospective/" cgid="81">技术前瞻</a></li>
+												</ul>
+											</div>
+											<div class="nav-three-item">
+												<a href="javascript:;">前端进阶</a>
+												<ul class="nav-item-ul clearfix">
+													<li><a href="//www.jikexueyuan.com/course/typescript/" cgid="97">Typescript</a></li>
+                                    				<li><a href="//www.jikexueyuan.com/course/security/" cgid="98">前端安全</a></li>
+                                    				<li><a href="//www.jikexueyuan.com/course/practice/" cgid="99">项目实战</a></li>
+												</ul>
+											</div>
+											<div class="nav-three-item">
+												<a href="javascript:;">前端框架</a>
+												<ul class="nav-item-ul clearfix">
+                                    				<li><a href="//www.jikexueyuan.com/course/jquery/" cgid="82">jQuery</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/jqueryui/" cgid="83">jQuery UI</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/jquerymobile/" cgid="84">jQuery Mobile</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/extjs/" cgid="85">Ext JS</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/angularjs/" cgid="86">AngularJS</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/reactjs/" cgid="87">ReactJS</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/bootstrap/" cgid="94">Bootstrap</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/reactnative/" cgid="371">React Native</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/backbone/" cgid="372">Backbone</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/threejs/" cgid="373">Three.js</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/mootools/" cgid="374">MooTools</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/compass/" cgid="375">Compass</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li><a href="javascript:;">云计算 / 大数据</a>
+										<div class="jk-course-nav-three">
+											<div class="nav-three-item">
+												<a href="javascript:;">前端开发</a>
+												<ul class="nav-item-ul clearfix">
+													<li><a href="//www.jikexueyuan.com/course/html/" cgid="76">HTML</a></li>
+													<li><a href="//www.jikexueyuan.com/course/css/" cgid="77">CSS</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/javascript/" cgid="78">JavaScript</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/html5/" cgid="79">HTML5</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/css3/" cgid="80">CSS3</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/prospective/" cgid="81">技术前瞻</a></li>
+												</ul>
+											</div>
+											<div class="nav-three-item">
+												<a href="javascript:;">前端进阶</a>
+												<ul class="nav-item-ul clearfix">
+													<li><a href="//www.jikexueyuan.com/course/typescript/" cgid="97">Typescript</a></li>
+                                    				<li><a href="//www.jikexueyuan.com/course/security/" cgid="98">前端安全</a></li>
+                                    				<li><a href="//www.jikexueyuan.com/course/practice/" cgid="99">项目实战</a></li>
+												</ul>
+											</div>
+											<div class="nav-three-item">
+												<a href="javascript:;">前端框架</a>
+												<ul class="nav-item-ul clearfix">
+                                    				<li><a href="//www.jikexueyuan.com/course/jquery/" cgid="82">jQuery</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/jqueryui/" cgid="83">jQuery UI</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/jquerymobile/" cgid="84">jQuery Mobile</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/extjs/" cgid="85">Ext JS</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/angularjs/" cgid="86">AngularJS</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/reactjs/" cgid="87">ReactJS</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/bootstrap/" cgid="94">Bootstrap</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/reactnative/" cgid="371">React Native</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/backbone/" cgid="372">Backbone</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/threejs/" cgid="373">Three.js</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/mootools/" cgid="374">MooTools</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/compass/" cgid="375">Compass</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li><a href="javascript:;">技术支撑</a>
+										<div class="jk-course-nav-three">
+											<div class="nav-three-item">
+												<a href="javascript:;">前端开发</a>
+												<ul class="nav-item-ul clearfix">
+													<li><a href="//www.jikexueyuan.com/course/html/" cgid="76">HTML</a></li>
+													<li><a href="//www.jikexueyuan.com/course/css/" cgid="77">CSS</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/javascript/" cgid="78">JavaScript</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/html5/" cgid="79">HTML5</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/css3/" cgid="80">CSS3</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/prospective/" cgid="81">技术前瞻</a></li>
+												</ul>
+											</div>
+											<div class="nav-three-item">
+												<a href="javascript:;">前端进阶</a>
+												<ul class="nav-item-ul clearfix">
+													<li><a href="//www.jikexueyuan.com/course/typescript/" cgid="97">Typescript</a></li>
+                                    				<li><a href="//www.jikexueyuan.com/course/security/" cgid="98">前端安全</a></li>
+                                    				<li><a href="//www.jikexueyuan.com/course/practice/" cgid="99">项目实战</a></li>
+												</ul>
+											</div>
+											<div class="nav-three-item">
+												<a href="javascript:;">前端框架</a>
+												<ul class="nav-item-ul clearfix">
+                                    				<li><a href="//www.jikexueyuan.com/course/jquery/" cgid="82">jQuery</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/jqueryui/" cgid="83">jQuery UI</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/jquerymobile/" cgid="84">jQuery Mobile</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/extjs/" cgid="85">Ext JS</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/angularjs/" cgid="86">AngularJS</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/reactjs/" cgid="87">ReactJS</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/bootstrap/" cgid="94">Bootstrap</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/reactnative/" cgid="371">React Native</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/backbone/" cgid="372">Backbone</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/threejs/" cgid="373">Three.js</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/mootools/" cgid="374">MooTools</a></li>
+				                                    <li><a href="//www.jikexueyuan.com/course/compass/" cgid="375">Compass</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li><a href="javascript:;">职业路径图</a></li>
+							<li><a href="javascript:;">知识体系图</a></li>
+							<li><a href="javascript:;">系列课程</a></li>
+							<li><a href="javascript:;">课程标签</a></li>
+						</ul>
+					</div>
+					<!--课程导航 end-->
+
+					<!--课程内容 start-->
+					<div class="jk-course-con pull-right clearfix">
+						<!--课程内容导航 start-->
+						<div class="jk-course-con-nav">
+							<div class="title">全部课程</div>
+							<ul class="ul-type">
+								<li>
+									<span class="ul-type-title">最新<i class="slide-icon"></i></span>
+									<ul class="ul-type-two">
+										<li><a href="javascript:;">最新</a></li>
+										<li><a href="javascript:;">最热</a></li>
+									</ul>
+								</li>
+								<li>
+									<span class="ul-type-title">课程类型<i class="slide-icon"></i></span>
+									<ul class="ul-type-two">
+										<li><a href="javascript:;">vip</a></li>
+										<li><a href="javascript:;">免费</a></li>
+										<li><a href="javascript:;">认证专证</a></li>
+										<li><a href="javascript:;">全部</a></li>
+									</ul>
+								</li>
+								<li>
+									<span class="ul-type-title">内容类型<i class="slide-icon"></i></span>
+									<ul class="ul-type-two">
+										<li><a href="javascript:;">知识精讲</a></li>
+										<li><a href="javascript:;">项目实战</a></li>
+										<li><a href="javascript:;">全部</a></li>
+									</ul>
+								</li>
+								<li>
+									<span class="ul-type-title">难度等级<i class="slide-icon"></i></span>
+									<ul class="ul-type-two">
+										<li><a href="javascript:;">初级</a></li>
+										<li><a href="javascript:;">中级</a></li>
+										<li><a href="javascript:;">高级</a></li>
+										<li><a href="javascript:;">全部</a></li>
+									</ul>
+								</li>
+							</ul>
+							<ul class="ul-style">
+								<li class="style-icon-block">
+									<i class="icon"></i>
+								</li>
+								<li class="style-icon-inline">
+									<i class="icon"></i>
+								</li>
+							</ul>
+						</div>
+						<!--课程内容导航 end-->
+
+						<!--课程列表 start-->
+						<div class="jk-course-list clearfix">
+							<div class="jk-course-list-item clearfix">
+								<div class="item-img">
+									<img src="https://a1.jikexueyuan.com/home/201707/12/e2b7/5965dd45a4144.jpg" title="AWS云上数据库迁移" alt="AWS云上数据库迁移">
+									<div class="item-img-play">
+										<i class="playericon"></i>
+									</div>
+								</div>
+								<div class="item-infor">
+									<h2 class="item-infor-h2">
+										<a href="">AWS云上数据库迁移</a>
+									</h2>
+									<p class="item-infor-p">
+										本课将向大家讲述数据库迁移到云的方法，数据库平台重构的可用选项，云上数据库迁移的最佳实践和注意事项，以及AWS数据库迁移工具（DMT）的使用方法。
+									</p>
+									<div class="timeandicon clearfix">
+										<div class="icon-item">
+											<i class="time-icon"></i>
+											<em>2课时42分钟</em>
+										</div>
+										<div class="icon-item txt-right hidden">
+											<em>1135人学习</em>
+										</div>
+										<div class="icon-item hidden">
+											<i class="xinhao-icon"></i>
+											<em>初级</em>
+										</div>
+										<div class="icon-item txt-right ">
+											<img width="16" src="https://a1.jikexueyuan.com/home/201707/12/cfaf/59658a14894bf.png" alt="AWS" title="AWS">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="jk-course-list-item">
+								<div class="item-img">
+									<img src="https://a1.jikexueyuan.com/home/201707/12/e2b7/5965dd45a4144.jpg" title="AWS云上数据库迁移" alt="AWS云上数据库迁移">
+									<div class="item-img-play">
+										<i class="playericon"></i>
+									</div>
+								</div>
+								<div class="item-infor">
+									<h2 class="item-infor-h2">
+										<a href="">AWS云上数据库迁移</a>
+									</h2>
+									<p class="item-infor-p">
+										本课将向大家讲述数据库迁移到云的方法，数据库平台重构的可用选项，云上数据库迁移的最佳实践和注意事项，以及AWS数据库迁移工具（DMT）的使用方法。
+									</p>
+									<div class="timeandicon clearfix">
+										<div class="icon-item">
+											<i class="time-icon"></i>
+											<em>2课时42分钟</em>
+										</div>
+										<div class="icon-item txt-right hidden">
+											<em>1135人学习</em>
+										</div>
+										<div class="icon-item hidden">
+											<i class="xinhao-icon"></i>
+											<em>初级</em>
+										</div>
+										<div class="icon-item txt-right ">
+											<img width="16" src="https://a1.jikexueyuan.com/home/201707/12/cfaf/59658a14894bf.png" alt="AWS" title="AWS">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="jk-course-list-item">
+								<div class="item-img">
+									<img src="https://a1.jikexueyuan.com/home/201707/12/e2b7/5965dd45a4144.jpg" title="AWS云上数据库迁移" alt="AWS云上数据库迁移">
+									<div class="item-img-play">
+										<i class="playericon"></i>
+									</div>
+								</div>
+								<div class="item-infor">
+									<h2 class="item-infor-h2">
+										<a href="">AWS云上数据库迁移</a>
+									</h2>
+									<p class="item-infor-p">
+										本课将向大家讲述数据库迁移到云的方法，数据库平台重构的可用选项，云上数据库迁移的最佳实践和注意事项，以及AWS数据库迁移工具（DMT）的使用方法。
+									</p>
+									<div class="timeandicon clearfix">
+										<div class="icon-item">
+											<i class="time-icon"></i>
+											<em>2课时42分钟</em>
+										</div>
+										<div class="icon-item txt-right hidden">
+											<em>1135人学习</em>
+										</div>
+										<div class="icon-item hidden">
+											<i class="xinhao-icon"></i>
+											<em>初级</em>
+										</div>
+										<div class="icon-item txt-right ">
+											<img width="16" src="https://a1.jikexueyuan.com/home/201707/12/cfaf/59658a14894bf.png" alt="AWS" title="AWS">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="jk-course-list-item">
+								<div class="item-img">
+									<img src="https://a1.jikexueyuan.com/home/201707/12/e2b7/5965dd45a4144.jpg" title="AWS云上数据库迁移" alt="AWS云上数据库迁移">
+									<div class="item-img-play">
+										<i class="playericon"></i>
+									</div>
+								</div>
+								<div class="item-infor">
+									<h2 class="item-infor-h2">
+										<a href="">AWS云上数据库迁移</a>
+									</h2>
+									<p class="item-infor-p">
+										本课将向大家讲述数据库迁移到云的方法，数据库平台重构的可用选项，云上数据库迁移的最佳实践和注意事项，以及AWS数据库迁移工具（DMT）的使用方法。
+									</p>
+									<div class="timeandicon clearfix">
+										<div class="icon-item">
+											<i class="time-icon"></i>
+											<em>2课时42分钟</em>
+										</div>
+										<div class="icon-item txt-right hidden">
+											<em>1135人学习</em>
+										</div>
+										<div class="icon-item hidden">
+											<i class="xinhao-icon"></i>
+											<em>初级</em>
+										</div>
+										<div class="icon-item txt-right ">
+											<img width="16" src="https://a1.jikexueyuan.com/home/201707/12/cfaf/59658a14894bf.png" alt="AWS" title="AWS">
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="jk-course-list-item">
+								<div class="item-img">
+									<img src="https://a1.jikexueyuan.com/home/201707/12/e2b7/5965dd45a4144.jpg" title="AWS云上数据库迁移" alt="AWS云上数据库迁移">
+									<div class="item-img-play">
+										<i class="playericon"></i>
+									</div>
+								</div>
+								<div class="item-infor">
+									<h2 class="item-infor-h2">
+										<a href="">AWS云上数据库迁移</a>
+									</h2>
+									<p class="item-infor-p">
+										本课将向大家讲述数据库迁移到云的方法，数据库平台重构的可用选项，云上数据库迁移的最佳实践和注意事项，以及AWS数据库迁移工具（DMT）的使用方法。
+									</p>
+									<div class="timeandicon clearfix">
+										<div class="icon-item">
+											<i class="time-icon"></i>
+											<em>2课时42分钟</em>
+										</div>
+										<div class="icon-item txt-right hidden">
+											<em>1135人学习</em>
+										</div>
+										<div class="icon-item hidden">
+											<i class="xinhao-icon"></i>
+											<em>初级</em>
+										</div>
+										<div class="icon-item txt-right ">
+											<img width="16" src="https://a1.jikexueyuan.com/home/201707/12/cfaf/59658a14894bf.png" alt="AWS" title="AWS">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="jk-course-list-item">
+								<div class="item-img">
+									<img src="https://a1.jikexueyuan.com/home/201707/12/e2b7/5965dd45a4144.jpg" title="AWS云上数据库迁移" alt="AWS云上数据库迁移">
+									<div class="item-img-play">
+										<i class="playericon"></i>
+									</div>
+								</div>
+								<div class="item-infor">
+									<h2 class="item-infor-h2">
+										<a href="">AWS云上数据库迁移</a>
+									</h2>
+									<p class="item-infor-p">
+										本课将向大家讲述数据库迁移到云的方法，数据库平台重构的可用选项，云上数据库迁移的最佳实践和注意事项，以及AWS数据库迁移工具（DMT）的使用方法。
+									</p>
+									<div class="timeandicon clearfix">
+										<div class="icon-item">
+											<i class="time-icon"></i>
+											<em>2课时42分钟</em>
+										</div>
+										<div class="icon-item txt-right hidden">
+											<em>1135人学习</em>
+										</div>
+										<div class="icon-item hidden">
+											<i class="xinhao-icon"></i>
+											<em>初级</em>
+										</div>
+										<div class="icon-item txt-right ">
+											<img width="16" src="https://a1.jikexueyuan.com/home/201707/12/cfaf/59658a14894bf.png" alt="AWS" title="AWS">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="jk-course-list-item">
+								<div class="item-img">
+									<img src="https://a1.jikexueyuan.com/home/201707/12/e2b7/5965dd45a4144.jpg" title="AWS云上数据库迁移" alt="AWS云上数据库迁移">
+									<div class="item-img-play">
+										<i class="playericon"></i>
+									</div>
+								</div>
+								<div class="item-infor">
+									<h2 class="item-infor-h2">
+										<a href="">AWS云上数据库迁移</a>
+									</h2>
+									<p class="item-infor-p">
+										本课将向大家讲述数据库迁移到云的方法，数据库平台重构的可用选项，云上数据库迁移的最佳实践和注意事项，以及AWS数据库迁移工具（DMT）的使用方法。
+									</p>
+									<div class="timeandicon clearfix">
+										<div class="icon-item">
+											<i class="time-icon"></i>
+											<em>2课时42分钟</em>
+										</div>
+										<div class="icon-item txt-right hidden">
+											<em>1135人学习</em>
+										</div>
+										<div class="icon-item hidden">
+											<i class="xinhao-icon"></i>
+											<em>初级</em>
+										</div>
+										<div class="icon-item txt-right ">
+											<img width="16" src="https://a1.jikexueyuan.com/home/201707/12/cfaf/59658a14894bf.png" alt="AWS" title="AWS">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="jk-course-list-item">
+								<div class="item-img">
+									<img src="https://a1.jikexueyuan.com/home/201707/12/e2b7/5965dd45a4144.jpg" title="AWS云上数据库迁移" alt="AWS云上数据库迁移">
+									<div class="item-img-play">
+										<i class="playericon"></i>
+									</div>
+								</div>
+								<div class="item-infor">
+									<h2 class="item-infor-h2">
+										<a href="">AWS云上数据库迁移</a>
+									</h2>
+									<p class="item-infor-p">
+										本课将向大家讲述数据库迁移到云的方法，数据库平台重构的可用选项，云上数据库迁移的最佳实践和注意事项，以及AWS数据库迁移工具（DMT）的使用方法。
+									</p>
+									<div class="timeandicon clearfix">
+										<div class="icon-item">
+											<i class="time-icon"></i>
+											<em>2课时42分钟</em>
+										</div>
+										<div class="icon-item txt-right hidden">
+											<em>1135人学习</em>
+										</div>
+										<div class="icon-item hidden">
+											<i class="xinhao-icon"></i>
+											<em>初级</em>
+										</div>
+										<div class="icon-item txt-right ">
+											<img width="16" src="https://a1.jikexueyuan.com/home/201707/12/cfaf/59658a14894bf.png" alt="AWS" title="AWS">
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!--课程列表 end-->
+							
+						<div class="page-nav">
+							<ul class="pages clearfix">
+								<li class="pgNext disabled">首页</li>
+								<li class="pgNext disabled">上一页</li>
+								<li class="page-num current">1</li>
+								<li class="page-num">2</li>
+								<li class="page-num">3</li>
+								<li class="page-num">4</li>
+								<li class="page-num">5</li>
+								<li class="page-num">6</li>
+								<li class="page-num">7</li>
+								<li class="thpoint">...</li>
+								<li class="pgNext">下一页</li>
+								<li class="pgNext">末页</li>
+								<li class="thpoint pagetotal">共 96 页</li>
+								<li class="thpoint pagenow">当前<input type="text" value="1" maxlength="6" id="gotoval">页</li>
+								<li class="pgNext go">确定</li>
+							</ul>
+						</div>
+						
+					</div>
+					<!--课程内容 end-->
+				</div>
+				<!-- 课程 end -->
+			</div>
+		</div>
+		<!-- 正文 end -->
+		
+		<!-- 底部 start -->
+		<div class="footer">
+			<div class="w-1000">
+				<div class="footer-nav clearfix">
+					<div class="footer-logo pull-left">
+						<img src="assets/images/footer/jk-logo-footer.png" alt="logo">
+						<p>极客学院，编程是一种信仰！</p>
+					</div>
+					<ul class="footer-navbar pull-left">
+						<li>职业学院
+							<ul>
+								<li><a href="#" target="_blank">Web前端工程师</a></li>
+								<li><a href="#" target="_blank">Python Web工程师</a></li>
+								<li><a href="#" target="_blank">Go语言工程师</a></li>
+								<li><a href="#" target="_blank">iOS工程师</a></li>
+								<li><a href="#" target="_blank">微信小程序工程师</a></li>
+							</ul>
+						</li>
+						<li>会员课程
+							<ul>
+								<li><a href="#" target="_blank">课程库</a></li>
+								<li><a href="#" target="_blank">知识体系图</a></li>
+								<li><a href="#" target="_blank">Go语言工程师</a></li>
+								<li><a href="#" target="_blank">iOS工程师</a></li>
+								<li><a href="#" target="_blank">微信小程序工程师</a></li>
+							</ul>
+						</li>
+						<li>极客社区
+							<ul>
+								<li><a href="#" target="_blank">极客社区</a></li>
+								<li><a href="#" target="_blank">Python Web工程师</a></li>
+								<li><a href="#" target="_blank">Go语言工程师</a></li>
+								<li><a href="#" target="_blank">iOS工程师</a></li>
+								<li><a href="#" target="_blank">微信小程序工程师</a></li>
+							</ul>
+						</li>
+						<li>其他
+							<ul>
+								<li><a href="#" target="_blank">关于我们</a></li>
+								<li><a href="#" target="_blank">加入我们</a></li>
+								<li><a href="#" target="_blank">Go语言工程师</a></li>
+								<li><a href="#" target="_blank">iOS工程师</a></li>
+								<li><a href="#" target="_blank">微信小程序工程师</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="footer-qcode pull-right">
+						<p>服务热线：400-678-8266</p>
+						<a class="qcode-btn qcode-iphone" href="">
+							<img class="app-img" src="assets/images/footer/app.png" alt="iPhone二维码">iPhone
+						</a>
+						<a class="qcode-btn qcode-android" href="">
+							<img class="app-img" src="assets/images/footer/app.png" alt="Android二维码">Android
+						</a>
+					</div>
+				</div>
+				<div class="copyright">
+					<p>Copyright © 2013-2017 jikexueyuan.com All Rights Reserved. 京ICP备11018032号-8 京公网安备11010802020210</p>
+					<div class="copyright-code">
+						<a href=""><img src="assets/images/footer/icon-down-sina.png" alt=""></a>
+						<a href=""><img src="assets/images/footer/icon-down-wechat.png" alt=""></a>
+					</div>
+					<a class="cert" href="#"><img src="assets/images/footer/cert.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+		<!-- 底部 end -->
+
+		<!-- 回到顶部 start -->
+		<div class="gotop">
+			<a class="btn top" href="javascript:;"></a>
+			<a class="btn app" href="javascript:;"></a>
+			<div class="qcode-app"></div>
+		</div>
+		<!-- 回到顶部 end -->
+	</div>
+
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/index.js"></script>
+</body>
+</html>

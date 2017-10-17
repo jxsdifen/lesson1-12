@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>web前端开发工程师</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/neat.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+</head>
+
+<body>
+    <div class="wapper main-con">
+        <div id="tab-type" class="tab tab-1">
+            <div class="hd">
+                <ul class="cmm-h-ul clearfix">
+                    <li class="col-md-6 on">web前端开发工程师面试题</li>
+                    <li class="col-md-6">开发技术</li>
+                </ul>
+            </div>
+            <div class="bd">
+                <ul>
+                    <li>
+                        <!-- 面试题 -->
+                        <div id="tab-question" class="tab tab-2">
+                            <div class="hd">
+                                <ul class="cmm-h-ul clearfix">
+                                    <li class="col-md-2 on">HTML/CSS部分</li>
+                                    <li class="col-md-2">JavaScript部分</li>
+                                    <li class="col-md-1">HTTP</li>
+                                    <li class="col-md-1">算法相关</li>
+                                    <li class="col-md-1">Web安全</li>
+                                    <li class="col-md-1">前端性能</li>
+                                    <li class="col-md-2">设计模式</li>
+                                    <li class="col-md-2">正则表达式</li>
+                                </ul>
+                            </div>
+                            <div class="bd">
+                                <ul>
+                                    <li class="item">
+                                        <h4>1、什么是盒子模型？</h4>
+                                        <p>在网页中，一个元素占有空间的大小由几个部分构成，其中包括元素的内容（content），元素的内边距（padding），元素的边框（border），元素的外边距（margin）四个部分。这四个部分占有的空间中，有的部分可以显示相应的内容，而有的部分只用来分隔相邻的区域或区域。4个部分一起构成了css中元素的盒模型。</p>
+                                    </li>
+                                    <li class="item">
+                                        <h4>2、行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？</h4>
+                                        <p>行内元素：a、b、span、img、input、strong、select、label、em、button、textarea
+                                            <br/> 块级元素：div、ul、li、dl、dt、dd、p、h1-h6、blockquote
+                                            <br/> 空元素：即系没有内容的HTML元素，例如：br、meta、hr、link、input、img
+                                        </p>
+                                    </li>
+                                    <li class="item">
+                                        <h4>3、CSS实现垂直水平居中</h4>
+                                        <p>
+                                            一道经典的问题，实现方法有很多种，以下是其中一种实现： HTML结构：
+                                            <pre>
+&lt;div class="wrapper"&gt;
+	&lt;div class="content"&gt;&lt;/div&gt;
+&lt;/div&gt;
+											    </pre> CSS：
+                                            <br> .wrapper {
+                                            <br> position: relative;
+                                            <br> width: 500px;
+                                            <br> height: 500px;
+                                            <br> background-color: #ddd;
+                                            <br> }
+                                            <br> .content{
+                                            <br> background-color:#6699FF;
+                                            <br> width:200px;
+                                            <br> height:200px;
+                                            <br> position: absolute; //父元素需要相对定位
+                                            <br> top: 50%;
+                                            <br> left: 50%;
+                                            <br> margin-top:-100px ; //二分之一的height，width
+                                            <br> margin-left: -100px;
+                                            <br> }
+                                        </p>
+                                    </li>
+                                    <li class="item">
+                                        <h4>4、简述一下src与href的区别</h4>
+                                        <p>
+                                            href 是指向网络资源所在位置，建立和当前元素（锚点）或当前文档（链接）之间的链接，用于超链接。
+                                            <br> src是指向外部资源的位置，指向的内容将会嵌入到文档中当前标签所在位置；在请求src资源时会将其指向的资源下载并应用到文档内，例如js脚本，img图片和frame等元素。当浏览器解析到该元素时，会暂停其他资源的下载和处理，直到将该资源加载、编译、执行完毕，图片和框架等元素也如此，类似于将所指向资源嵌入当前标签内。这也是为什么将js脚本放在底部而不是头部。
+                                        </p>
+                                    </li>
+                                    <li class="item">
+                                        <h4>5、什么是CSS Hack?</h4>
+                                        <p>一般来说是针对不同的浏览器写不同的CSS,就是 CSS Hack。
+                                            <br> IE浏览器Hack一般又分为三种，条件Hack、属性级Hack、选择符Hack（详细参考CSS文档：css文档）。例如：
+                                            <br> // 1、条件Hack
+                                            <br>
+                                            <pre>&lt;!--[if IE]&gt;
+      &lt;style&gt;
+            .test{color:red;}
+      &lt;/style&gt;
+   &lt;![endif]--&gt;</pre>
+                                            <br> // 2、属性Hack
+                                            <br> .test{
+                                            <br> color:#090\9; /* For IE8+ */
+                                            <br> *color:#f00; /* For IE7 and earlier */
+                                            <br> _color:#ff0; /* For IE6 and earlier */
+                                            <br> }
+                                            <br> // 3、选择符Hack
+                                            <br> * html .test{color:#090;} /* For IE6 and earlier */
+                                            <br> * + html .test{color:#ff0;} /* For IE7 */
+                                        </p>
+                                    </li>
+                                    <li class="item">
+                                        <h4>6、简述同步和异步的区别</h4>
+                                        <p>同步是阻塞模式，异步是非阻塞模式。
+                                            <br> 同步就是指一个进程在执行某个请求的时候，若该请求需要一段时间才能返回信息，那么这个进程将会一直等待下去，直到收到返回信息才继续执行下去；
+                                            <br> 异步是指进程不需要一直等下去，而是继续执行下面的操作，不管其他进程的状态。当有消息返回时系统会通知进程进行处理，这样可以提高执行的效率。
+                                        </p>
+                                    </li>
+                                    <li class="item">
+                                        <h4>7、px和em的区别</h4>
+                                        <p>px和em都是长度单位，区别是，px的值是固定的，指定是多少就是多少，计算比较容易。em得值不是固定的，并且em会继承父级元素的字体大小。
+                                            <br> 浏览器的默认字体高都是16px。所以未经调整的浏览器都符合: 1em=16px。那么12px=0.75em, 10px=0.625em</p>
+                                    </li>
+                                    <li class="item">
+                                        <h4>8、什么叫优雅降级和渐进增强？</h4>
+                                        <p>渐进增强 progressive enhancement：
+                                            <br> 针对低版本浏览器进行构建页面，保证最基本的功能，然后再针对高级浏览器进行效果、交互等改进和追加功能达到更好的用户体验。
+                                            <br> 优雅降级 graceful degradation：
+                                            <br> 一开始就构建完整的功能，然后再针对低版本浏览器进行兼容。
+                                            <br> 区别：
+                                            <br> a. 优雅降级是从复杂的现状开始，并试图减少用户体验的供给
+                                            <br> b. 渐进增强则是从一个非常基础的，能够起作用的版本开始，并不断扩充，以适应未来环境的需要
+                                            <br> c. 降级（功能衰减）意味着往回看；而渐进增强则意味着朝前看，同时保证其根基处于安全地带</p>
+                                    </li>
+                                    <li class="item">
+                                        <h4>9、浏览器的内核分别是什么?</h4>
+                                        <p>IE: trident内核
+                                            <br> Firefox：gecko内核
+                                            <br> Safari：webkit内核
+                                            <br> Opera：以前是presto内核，Opera现已改用Google Chrome的Blink内核
+                                            <br> Chrome：Blink(基于webkit，Google与Opera Software共同开发)
+                                        </p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="item">
+                                        <h4>怎样添加、移除、移动、复制、创建和查找节点？</h4>
+                                        <p>1）创建新节点
+                                            <br> createDocumentFragment() //创建一个DOM片段
+                                            <br> createElement() //创建一个具体的元素
+                                            <br> createTextNode() //创建一个文本节点
+                                            <br> 2）添加、移除、替换、插入
+                                            <br> appendChild() //添加
+                                            <br> removeChild() //移除
+                                            <br> replaceChild() //替换
+                                            <br> insertBefore() //插入
+                                            <br> 3）查找
+                                            <br> getElementsByTagName() //通过标签名称
+                                            <br> getElementsByName() //通过元素的Name属性的值
+                                            <br> getElementById() //通过元素Id，唯一性</p>
+                                    </li>
+                                    <li class="item">
+                                        <h4>实现一个函数clone，可以对JavaScript中的5种主要的数据类型（包括Number、String、Object、Array、Boolean）进行值复制。</h4>
+                                        <p>
+                                            <pre>
+	<code>
+/**
+ * 对象克隆
+ * 支持基本数据类型及对象
+ * 递归方法
+ */
+function clone(obj) {
+    var o;
+    switch (typeof obj) {
+        case "undefined":
+            break;
+        case "string":
+            o = obj + "";
+            break;
+        case "number":
+            o = obj - 0;
+            break;
+        case "boolean":
+            o = obj;
+            break;
+        case "object": // object 分为两种情况 对象（Object）或数组（Array）
+            if (obj === null) {
+                o = null;
+            } else {
+                if (Object.prototype.toString.call(obj).slice(8, -1) === "Array") {
+                    o = [];
+                    for (var i = 0; i &lt; obj.length; i++) {
+                        o.push(clone(obj[i]));
+                    }
+                } else {
+                    o = {};
+                    for (var k in obj) {
+                        o[k] = clone(obj[k]);
+                    }
+                }
+            }
+            break;
+        default:
+            o = obj;
+            break;
+    }
+    return o;
+}
+	</code>
+</pre>
+                                        </p>
+                                    </li>
+                                    <li class="item">
+                                        <h4>如何消除一个数组里面重复的元素？</h4>
+                                        <p>
+                                            <pre><code>
+												// 方法一：
+var arr1 =[1,2,2,2,3,3,3,4,5,6],
+    arr2 = [];
+for(var i = 0,len = arr1.length; i &lt; len; i++){
+    if(arr2.indexOf(arr1[i]) &lt; 0){
+        arr2.push(arr1[i]);
+    }
+}
+document.write(arr2); // 1,2,3,4,5,6
+											</code></pre>
+                                        </p>
+                                    </li>
+                                    <li class="item">
+                                        <h4>在Javascript中什么是伪数组？如何将伪数组转化为标准数组？</h4>
+                                        <p>
+                                            伪数组（类数组）：无法直接调用数组方法或期望length属性有什么特殊的行为，但仍可以对真正数组遍历方法来遍历它们。典型的是函数的argument参数，还有像调用getElementsByTagName,document.childNodes之类的,它们都返回NodeList对象都属于伪数组。可以使用Array.prototype.slice.call(fakeArray)将数组转化为真正的Array对象。
+                                            <pre><code>
+function log(){
+      var args = Array.prototype.slice.call(arguments);  
+//为了使用unshift数组方法，将argument转化为真正的数组
+      args.unshift('(app)');
+ 
+      console.log.apply(console, args);
+};</code></pre></p>
+                                    </li>
+                                    <li class="item">
+                                        <h4>Javascript中callee和caller的作用？</h4>
+                                        <p>
+                                            caller是返回一个对函数的引用，该函数调用了当前函数；
+                                            <br> callee是返回正在被执行的function函数，也就是所指定的function对象的正文。
+                                        </p>
+                                    </li>
+                                    <li class="item">
+                                        <h4>请描述一下cookies，sessionStorage和localStorage的区别</h4>
+                                        <p>
+                                            sessionStorage用于本地存储一个会话（session）中的数据，这些数据只有在同一个会话中的页面才能访问并且当会话结束后数据也随之销毁。因此sessionStorage不是一种持久化的本地存储，仅仅是会话级别的存储。而localStorage用于持久化的本地存储，除非主动删除数据，否则数据是永远不会过期的。
+                                            <br> web storage和cookie的区别
+                                            <br> Web Storage的概念和cookie相似，区别是它是为了更大容量存储设计的。Cookie的大小是受限的，并且每次你请求一个新的页面的时候Cookie都会被发送过去，这样无形中浪费了带宽，另外cookie还需要指定作用域，不可以跨域调用。 除此之外，Web Storage拥有setItem,getItem,removeItem,clear等方法，不像cookie需要前端开发者自己封装setCookie，getCookie。但是Cookie也是不可以或缺的：Cookie的作用是与服务器进行交互，作为HTTP规范的一部分而存在 ，而Web Storage仅仅是为了在本地“存储”数据而生。</p>
+                                    </li>
+                                    <li class="item">
+                                        <h4>统计字符串中字母个数或统计最多字母数。</h4>
+                                        <p><pre><code>
+                                    		var str = "aaaabbbccccddfgh";
+var obj  = {};
+for(var i=0;i&lt;str.length;i++){
+    var v = str.charAt(i);
+    if(obj[v] && obj[v].value == v){
+        obj[v].count = ++ obj[v].count;
+    }else{
+        obj[v] = {};
+        obj[v].count = 1;
+        obj[v].value = v;
+    }
+}
+for(key in obj){
+    document.write(obj[key].value +'='+obj[key].count+'&nbsp;'); // a=4  b=3  c=4  d=2  f=1  g=1  h=1 
+}  
+
+                                    	</code></pre></p>
+                                    </li>
+                                    <li class="item">
+                                        <h4>jQuery的事件委托方法on、live、delegate之间有什么区别？</h4>
+                                    </li>
+                                    <li class="item">
+                                        <h4>如何理解闭包？</h4>
+                                    </li>
+                                    <li class="item">
+                                        <h4>跨域请求资源的方法有哪些？</h4>
+                                    </li>
+                                    <li class="item">
+                                        <h4>谈谈垃圾回收机制方式及内存管理</h4>
+                                    </li>
+                                    <li class="item">
+                                        <h4>开发过程中遇到的内存泄露情况，如何解决的？</h4>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="item">
+                                        <h4>一次完整的HTTP事务是怎样的一个过程？</h4>
+                                        <p>基本流程：
+                                            <br> a. 域名解析
+                                            <br> b. 发起TCP的3次握手
+                                            <br> c. 建立TCP连接后发起http请求
+                                            <br> d. 服务器端响应http请求，浏览器得到html代码
+                                            <br> e. 浏览器解析html代码，并请求html代码中的资源
+                                            <br> f. 浏览器对页面进行渲染呈现给用户</p>
+                                    </li>
+                                    <li class="item">
+                                        <h4>HTTP的状态码有哪些？</h4>
+                                        <p>
+                                            200 OK
+                                            <br> 301 Moved Permanently
+                                            <br> 302 Found
+                                            <br> 304 Not Modified
+                                            <br> 307 Temporary Redirect
+                                            <br> 400 Bad Request
+                                            <br> 401 Unauthorized
+                                            <br> 403 Forbidden
+                                            <br> 404 Not Found
+                                            <br> 410 Gone
+                                            <br> 500 Internal Server Error
+                                            <br> 501 Not Implemented
+                                        </p>
+                                    </li>
+                                    <li class="item">
+                                        <h4>HTTPS是如何实现加密？</h4>
+                                        <p>HTTP + 加密 + 认证 + 完整性保护 = HTTPS
+                                            <br> 使用两把密钥的公开密钥加密
+                                            <br> 公开密钥加密使用一对非对称的密钥。一把叫做私钥，另一把叫做公钥。私钥不能让其他任何人知道，而公钥则可以随意发布，任何人都可以获得。使用公钥加密方式，发送密文的一方使用对方的公钥进行加密处理，对方收到被加密的信息后，再使用自己的私钥进行解密。利用这种方式，不需要发送用来解密的私钥，也不必担心密钥被攻击者窃听而盗走。
+                                            <br> 过程
+                                            <br> ①服务器把自己的公钥登录至数字证书认证机构。
+                                            <br> ②数字证书机构把自己的私有密钥向服务器的公开密码部署数字签名并颁发公钥证书。
+                                            <br> ③客户端拿到服务器的公钥证书后，使用数字证书认证机构的公开密钥，向数字证书认证机构验证公钥证书上的数字签名。以确认服务器公钥的真实性。
+                                            <br> ④使用服务器的公开密钥对报文加密后发送。
+                                            <br> ⑤服务器用私有密钥对报文解密。
+                                        </p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="item">
+                                        <h4>手写数组快速排序</h4>
+                                        <p>关于快排算法的详细说明，可以参考阮一峰老师的文章快速排序
+                                            <br> "快速排序"的思想很简单，整个排序过程只需要三步：
+                                            <br> （1）在数据集之中，选择一个元素作为"基准"（pivot）。
+                                            <br> （2）所有小于"基准"的元素，都移到"基准"的左边；所有大于"基准"的元素，都移到"基准"的右边。
+                                            <br> （3）对"基准"左边和右边的两个子集，不断重复第一步和第二步，直到所有子集只剩下一个元素为止。
+                                            <br> 参考代码：
+                                            <br>
+                                            <pre><code>
+ var quickSort = function(arr) {
+　　if (arr.length &lt;= 1) { return arr; }
+　　var pivotIndex = Math.floor(arr.length / 2);
+　　var pivot = arr.splice(pivotIndex, 1)[0];
+　　var left = [];
+　　var right = [];
+　　for (var i = 0; i &lt; arr.length; i++){
+　　　　if (arr[i] &lt; pivot) {
+　　　　　　left.push(arr[i]);
+　　　　} else {
+　　　　　　right.push(arr[i]);
+　　　　}
+　　}
+　　return quickSort(left).concat([pivot], quickSort(right));
+};</code></pre></p>
+                                    </li>
+                                    <li class="item">
+                                        <h4>JavaScript实现二分法查找</h4>
+                                        <p>二分法查找，也称折半查找，是一种在有序数组中查找特定元素的搜索算法。查找过程可以分为以下步骤：
+                                            <br> （1）首先，从有序数组的中间的元素开始搜索，如果该元素正好是目标元素（即要查找的元素），则搜索过程结束，否则进行下一步。
+                                            <br> （2）如果目标元素大于或者小于中间元素，则在数组大于或小于中间元素的那一半区域查找，然后重复第一步的操作。
+                                            <br> （3）如果某一步数组为空，则表示找不到目标元素。
+                                            <br> 参考代码:
+                                            <br>
+                                            <pre><code>
+     // 非递归算法
+        function binary_search(arr, key) {
+            var low = 0,
+                high = arr.length - 1;
+            while(low &lt;= high){
+                var mid = parseInt((high + low) / 2);
+                if(key == arr[mid]){
+                    return  mid;
+                }else if(key > arr[mid]){
+                    low = mid + 1;
+                }else if(key &lt; arr[mid]){
+                    high = mid -1;
+                }else{
+                    return -1;
+                }
+            }
+        };
+        var arr = [1,2,3,4,5,6,7,8,9,10,11,23,44,86];
+        var result = binary_search(arr,10);
+        alert(result); // 9 返回目标元素的索引值       
+</code></pre>
+                                            <pre><code>// 递归算法
+        function binary_search(arr,low, high, key) {
+            if (low > high){
+                return -1;
+            }
+            var mid = parseInt((high + low) / 2);
+            if(arr[mid] == key){
+                return mid;
+            }else if (arr[mid] > key){
+                high = mid - 1;
+                return binary_search(arr, low, high, key);
+            }else if (arr[mid] &lt; key){
+                low = mid + 1;
+                return binary_search(arr, low, high, key);
+            }
+        };
+        var arr = [1,2,3,4,5,6,7,8,9,10,11,23,44,86];
+        var result = binary_search(arr, 0, 13, 10);
+        alert(result); // 9 返回目标元素的索引值 </code></pre></p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="item">
+                                        <h4>你所了解到的Web攻击技术</h4>
+                                        <p>1）XSS（Cross-Site Scripting，跨站脚本攻击）：指通过存在安全漏洞的Web网站注册用户的浏览器内运行非法的HTML标签或者JavaScript进行的一种攻击。
+                                            <br> （2）SQL注入攻击
+                                            <br> （3）CSRF（Cross-Site Request
+                                            <br>Forgeries，跨站点请求伪造）：指攻击者通过设置好的陷阱，强制对已完成的认证用户进行非预期的个人信息或设定信息等某些状态更新。</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="item">
+                                        <h4>如何优化图像、图像格式的区别？</h4>
+                                        <p>存jpg的格式，有品质可以选择，100%为最佳品质，越向下，图像质量越差。文件体积越小，
+                                            <br> 还可存gif格式，GIF只有256个颜色，可以选择8、32、64个颜色输出，也能减小文件体积，但图像质量也会变差
+                                        </p>
+                                    </li>
+                                    <li class="item">
+                                        <h4>浏览器是如何渲染页面的？</h4>
+                                        <p>当了解web访问原理后，与前端工程师或页面重构师工作更为关系密切的应该是浏览器，WEB 页面运行在各种各样的浏览器当中，浏览器载入、渲染页面的速度直接影响着用户体验， 特别是浏览器渲染页面的原理，页面渲染就是浏览器将 HTML 代码根据 CSS 定义的规则显示在浏览器窗口中的这个过程，理解了原理就更会容易理解前端优化的一些准则。</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="item">
+                                        <h4>对MVC、MVVM的理解</h4>
+                                        <p>MVC
+                                            <br> 模型－视图－控制器（Model-View-Controller）
+                                            <br> Model和View永远不能相互通信，只能通过Controller传递。
+                                            <br> Controller可以直接与Model对话（读写调用Model），Model通过Notification和KVO机制与Controller间接通信。
+                                            <br> Controller可以直接与View对话，通过outlet,直接操作View,outlet直接对应到View中的控件,View通过action向Controller报告事件的发生(如用户Touch我了)。Controller是View的直接数据源（数据很可能是Controller从Model中取得并经过加工了）。Controller是View的代理（delegate),以同步View与Controller。
+                                            <br> MVVM
+                                            <br> Model －ViewModel － View
+                                            <br> 什么是 MVVM：一个 MVC 的增强版，我们正式连接了视图和控制器，并将表示逻辑从 Controller 移出放到一个新的对象里，即 View Model。MVVM 听起来很复杂，但它本质上就是一个精心优化的 MVC 架构
+                                            <br> Model层是少不了的了，我们得有东西充当DTO(数据传输对象)，当然，用字典也是可以的，编程么，要灵活一些。Model层是比较薄的一层，如果学过Java的小伙伴的话，对JavaBean应该不陌生吧。
+                                            <br> ViewModel层，就是View和Model层的粘合剂，他是一个放置用户输入验证逻辑，视图显示逻辑，发起网络请求和其他各种各样的代码的极好的地方。说白了，就是把原来ViewController层的业务逻辑和页面逻辑等剥离出来放到ViewModel层。
+                                            <br> View层，就是ViewController层，他的任务就是从ViewModel层获取数据，然后显示。
+                                        </p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="item">
+                                        <h4>写一个function，清除字符串前后的空格。（兼容所有浏览器）</h4>
+                                        <p>
+<pre><code>
+function trim(str) { if (str && typeof str === "string") { return str.replace(/(^\s*)|(\s*)$/g,""); //去除前后空白符 } }
+</code>
+</pre> 使用正则表达式验证邮箱格式
+<br>
+<pre><code>var reg = /^(\w)+(\.\w+)*@(\w)+((\.\w{2,3}){1,3})$/;
+    var email = "example@qq.com";
+    console.log(reg.test(email));  // true  </code></pre></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <!-- 开发技术 -->
+                        <div id="tab-dev" class="tab tab-2">
+                            <div class="hd">
+                                <ul class="cmm-h-ul clearfix">
+                                    <li class="col-md-2 on">css框架</li>
+                                    <li class="col-md-2">预处理器</li>
+                                    <li class="col-md-1">js框架</li>
+                                    <li class="col-md-1">js-ES</li>
+                                    <li class="col-md-1">js包管理</li>
+                                    <li class="col-md-1">构建工具</li>
+                                    <li class="col-md-1">设计模式</li>
+                                    <li class="col-md-1">Testing</li>
+                                    <li class="col-md-2">后端</li>
+                                </ul>
+                            </div>
+                            <div class="bd">
+                                <ul>
+                                    <li class="item">
+                                        <b>bootstarp</b>
+                                    </li>
+                                    <li class="item">
+                                        <b>Semantic UI</b>
+                                    </li>
+                                    <li class="item">
+                                        Foudotion
+                                    </li>
+                                    <li class="item">
+                                        Materialize
+                                    </li>
+                                    <li class="item">
+                                        Bulmo
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="item">
+                                        <b>Sass</b>
+                                    </li>
+                                    <li class="item">
+                                        Less
+                                    </li>
+                                    <li class="item">
+                                        Stylus
+                                    </li>
+                                    <li class="item">
+                                        PostCSS
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="item">
+                                        <b>Angular Js</b>
+                                    </li>
+                                    <li class="item">
+                                        <b>React</b>
+                                    </li>
+                                    <li class="item">
+                                        <b>Vue.js</b>
+                                    </li>
+                                    <li class="item">
+                                        preact
+                                    </li>
+                                    <li class="item">
+                                        Inferno
+                                    </li>
+                                    <li class="item">
+                                        Riot
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="item">
+                                        <b>es6</b>
+                                    </li>
+                                    <li class="item">
+                                        <b>es5</b>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="item">
+                                        <b>npm</b>
+                                    </li>
+                                    <li class="item">
+                                        <b>yarn</b>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="item">
+                                        <h4>底层构建工具</h4>
+                                        <p>
+                                            <b>gulp</b>
+                                            <br> grunt
+                                        </p>
+                                    </li>
+                                    <li class="item">
+                                        <h4>模块化构建工具</h4>
+                                        <p>
+                                            <b>webpack</b>
+                                            <br> RequireJS/AMD
+                                            <br> Browserify
+                                        </p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="item">
+                                        <b>单例模式</b>
+                                    </li>
+                                    <li class="item">
+                                        <h4><b>工厂模式</b></h4>
+                                        <p>
+                                            简单工厂模式
+                                            <br> 抽象工厂模式
+                                        </p>
+                                    </li>
+                                    <li class="item">
+                                        。。。
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="item">
+                                        <b>Jest</b>
+                                    </li>
+                                    <li class="item">
+                                        <b>Mocho</b>
+                                    </li>
+                                    <li class="item">
+                                        Jasmine
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="item">
+                                        <h4><b>nodejs</b></h4>
+                                        <p>
+                                            Express(nodejs框架)
+                                        </p>
+                                    </li>
+                                    <li class="item">
+                                        <h4><b>数据库</b></h4>
+                                        <p>
+                                            <b>Mysql</b>
+                                            <br>
+                                            <b>MangoDB</b>
+                                            <br>
+                                            <b>Redis</b>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/index.js"></script>
+</body>
+
+</html>

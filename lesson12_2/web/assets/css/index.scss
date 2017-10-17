@@ -1,0 +1,74 @@
+@import 'common';
+$color_white: #fff;
+$color_black: #555;
+
+body,html{
+	background-color: #ebebeb;
+}
+
+.tab{
+	.hd{
+		ul{
+			li{
+				display: block;
+				height: 40px;
+				line-height: 40px;
+				color: $color_black;
+				background-color: $color_white;
+				text-align: center;
+				cursor: pointer;
+
+				&.on{
+					color: $color_white;
+					background-color: #e67f22;
+				}
+			}
+		}
+	}
+	.bd{
+		margin-top: 10px;
+		>ul{
+			display: none;
+		}
+	}
+	
+	&.tab-1{}
+	&.tab-2{
+		.bd{
+			ul{
+				display: none;
+				background-color: $color_white;
+
+				.item{
+					color: $color_black;
+					padding: 10px;
+					border-bottom: 1px solid $color_black;
+
+					h4{
+						font-weight: bold;
+					}
+
+					&:last-child{
+						border-bottom: none;
+					};
+
+					b{
+						color: red;
+						font-weight: normal;
+					}
+
+					pre{
+						background-color: #f7f8f9;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+

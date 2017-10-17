@@ -1,0 +1,44 @@
+//通用 start
+.wapper{
+	margin: 0 auto;
+	width: 1000px;
+}
+.mt20{margin-top: 20px;}
+.mt40{margin-top: 40px;}
+.mt50{margin-top: 50px;}
+.mb20{margin-bottom: 20px;}
+.mb40{margin-bottom: 40px;}
+.mb50{margin-bottom: 50px;}
+
+.pt20{padding-top: 20px;}
+.pt40{padding-top: 40px;}
+.pt50{padding-top: 50px;}
+.pb20{padding-bottom: 20px;}
+.pb40{padding-bottom: 40px;}
+.pb50{padding-bottom: 50px;}
+
+.col-md-1 {width: 8.33333333%;}
+.col-md-2 {width: 16.66666667%;}
+.col-md-3 {width: 25%;}
+.col-md-4 {width: 33.33333333%;}
+.col-md-5 {width: 41.66666667%;}
+.col-md-6 {width: 50%;}
+.col-md-7 {width: 58.33333333%;}
+.col-md-8 {width: 66.66666667%;}
+.col-md-9 {width: 75%;}
+.col-md-10 {width: 83.33333333%;}
+.col-md-11 {width: 91.66666667%;}
+.col-md-12 {width: 100%;}
+
+.pull-left{float: left;}
+.pull-right{float: right;}
+.clearfix{
+	*height:1%;
+	&:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+}
+
+.cmm-h-ul{
+	>li{
+		float: left;display: inline-block;
+	}
+}

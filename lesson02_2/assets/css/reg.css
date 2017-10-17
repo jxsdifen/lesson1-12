@@ -1,0 +1,102 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-size: 12px;
+	background-color: #007693;
+}
+
+.text-left{text-align: left;}
+.text-center{text-align: center;}
+.text-right{text-align: right;}
+
+.main{
+	margin: 10px auto;
+	padding: 10px 35px;
+	width: 710px;
+	background-color: #fff;
+	box-sizing: border-box;
+	border-radius: 30px;
+}
+
+/*=====header=====start*/
+.header{
+	position: relative;
+}
+.header nav{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.header nav a{
+	margin-left: 12px;
+	color: #ff009a;
+	text-decoration: none;
+}
+/*=====header=====end*/
+
+
+/*=====content=====start*/
+table .font-blue{
+	color: #0000ff;
+}
+table .font-red{
+	color: #FF0000;
+}
+
+table{
+	border-left: 1px solid #cccccc;
+	border-top: 1px solid #cccccc;
+}
+table h4{
+	margin: 20px auto;
+	font-size: 18px;
+	font-weight: bold;
+}
+table i{
+	margin-right: 2px;
+	font-style: normal;
+	color: #FF0000;
+}
+table tr{
+	line-height: 20px;
+}
+table td{
+	padding: 2px;
+	border-right: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+}
+table input[type=checkbox]{
+	margin: 0 2px;
+}
+table textarea{
+	width: 380px;
+	height: 80px;
+}
+table tr.title{
+	font-size: 13px;
+	font-weight: 700;
+	color: #003399;
+	background-color: #eee;
+}
+table td.label{
+	width: 135px;
+	text-align: right;
+}
+.tr-center .btn_submit{
+	margin: 30px auto;
+	padding: 0 10px;
+}
+/*=====content=====end*/
+
+
+/*=====footer=====start*/
+.footer p{
+	padding: 5px 0 20px;
+	text-align: center;
+}
+/*=====footer=====end*/
+
+

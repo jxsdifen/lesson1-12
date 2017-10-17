@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>开发新版极客学院首页</title>
+	<link rel="stylesheet" href="assets/css/neat.css">
+	<link rel="stylesheet" href="assets/plugins/flickity/flickity.css">
+	<link rel="stylesheet" href="assets/css/jk.css">
+</head>
+<body>
+	<div class="wapper">
+		<!-- 头部 start -->
+		<div class="header">
+			<div class="header-con w-1000">
+				<a class="logo" href="http://www.jikexueyuan.com/">
+					<img src="assets/images/logo.png" alt="logo">
+				</a>
+				<nav class="pull-left">
+					<ul class="common-horizontal-ul header-nav">
+						<li><a class="active" href="javascript:;">首页</a></li>
+						<li><a href="javascript:;">职业学院<i class="slide-icon"></i></a>
+							<ul class="header-nav-two">
+								<li><a href="http://www.jikexueyuan.com/zhiye/web"><span class="web-icon"></span>Web前端工程师</a></li>
+								<li><a href="http://www.jikexueyuan.com/zhiye/web"><span class="web-icon"></span>Android工程师</a></li>
+								<li><a href="http://www.jikexueyuan.com/zhiye/web"><span class="web-icon"></span>iOS工程师</a></li>
+								<li><a href="http://www.jikexueyuan.com/zhiye/web"><span class="web-icon"></span>Python工程师</a></li>
+								<li><a href="http://www.jikexueyuan.com/zhiye/web"><span class="web-icon"></span>Golang前端工程师</a></li>
+								<li><a href="http://www.jikexueyuan.com/zhiye/web"><span class="web-icon"></span>微信小程序</a></li>
+								<li><a href="http://www.jikexueyuan.com/zhiye/web"><span class="web-icon"></span>PHP工程师</a></li>
+							</ul>
+						</li>
+						<li><a href="javascript:;">会员课程<i class="slide-icon"></i></a>
+							<ul class="header-nav-two">
+								<li><a href="http://www.jikexueyuan.com/zhiye/web">课程库</a></li>
+								<li><a href="http://www.jikexueyuan.com/zhiye/web">职业路径</a></li>
+								<li><a href="http://www.jikexueyuan.com/zhiye/web">知识体系图</a></li>
+								<li><a href="http://www.jikexueyuan.com/zhiye/web">系列课程</a></li>
+								<li><a href="http://www.jikexueyuan.com/zhiye/web">企业专区</a></li>
+							</ul>
+						</li>
+						<li><a href="javascript:;">极客社区<i class="slide-icon"></i></a>
+							<ul class="header-nav-two">
+								<li><a href="http://www.jikexueyuan.com/zhiye/web">技术问答</a></li>
+								<li><a href="http://www.jikexueyuan.com/zhiye/web">Wiki</a></li>
+								<li><a href="http://www.jikexueyuan.com/zhiye/web">社群</a></li>
+								<li><a href="http://www.jikexueyuan.com/zhiye/web">资料下载</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<div class="icon-list pull-right">
+					<span class="icon-search"></span>
+					<span class="icon-app"></span>
+					<span class="icon-warn"></span>
+					<span class="icon-user"></span>
+				</div>
+			</div>
+		</div>
+		<!-- 头部 end -->
+
+		<!-- 正文 start -->
+		<div class="jk-container pt20 pb50">
+			<div class="jk-main w-1000">
+				<!-- banner start -->
+				<div class="jk-banner clearfix">
+					<div class="jk-banner-con pull-left">
+						<!--焦点图 start-->
+						<div class="focus-list" data-flickity='{ "imagesLoaded": true, "wrapAround": true, "autoPlay": 5000 }'>
+							<div class="focus-con">
+								<a class="focus-link" href="#" target="_blank">
+									<img class="focus-img" src="assets/images/banner/banner01.jpeg" alt=""/>
+								</a>
+							</div>
+							<div class="focus-con">
+								<a class="focus-link" href="#" target="_blank">
+									<img class="focus-img" src="assets/images/banner/banner02.jpg" alt=""/>
+								</a>
+							</div>
+							<div class="focus-con">
+								<a class="focus-link" href="#" target="_blank">
+									<img class="focus-img" src="assets/images/banner/banner03.png" alt=""/>
+								</a>
+							</div>
+						</div>
+						<!--焦点图 end-->
+					</div>
+					<div class="jk-banner-sider pull-right">
+						<div class="jk-login">
+							<div class="jk-login-info">
+								<div class="head-img">
+									<img src="assets/images/headpic.jpg" alt="login"/>
+								</div>
+								<span class="login-name">Hello,</span>
+								<p class="login-desc">欢迎成为极客一员</p>
+							</div>
+							<div class="jk-login-btns">
+								<a class="btn pull-left" href="">登录</a>
+								<a class="btn pull-right" href="">免费注册</a>
+							</div>
+						</div>
+						<div class="jk-salary">
+							<img src="assets/images/banner/salary.png" alt="薪水">
+						</div>
+					</div>
+				</div>
+				<!-- banner end -->
+
+				<!-- 线上就业班 start -->
+				<div class="jk-online mt40">
+					<h2 class="jk-title">线上就业班</h2>
+					<div class="jk-online-list">
+						<div class="jk-online-con pull-left">
+							<a class="online-item item-h5" href="#">
+								<p>WEB大前端工程师就业班</p>
+							</a>
+							<a class="online-item item-php" href="#">
+								<p>PHP工程师就业班</p>
+							</a>
+							<a class="online-item item-java" href="#">
+								<p>Java Web工程师就业班</p>
+							</a>
+							<a class="online-item item-ui" href="#">
+								<p>UI/UX设计师就业班</p>
+							</a>
+						</div>
+						<div class="pull-right">
+							<a href="">
+								<img src="assets/images/online/title.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- 线上就业班 end -->
+
+				<!-- 专业精品课 start -->
+				<div class="jk-professional mt40">
+					<h2 class="jk-title">专业精品课</h2>
+					<div class="jk-professional-con clearfix">
+						<a class="jk-professional-item" href="#">
+							<img src="assets/images/professional/1.jpg" alt=""/>
+							<div class="item-con">
+								<p class="title">再见 Eclipse - Android Studio 高效开发再见 Eclipse - Android Studio 高效开发</p>
+								<p class="date">7小时<span>|</span>1门课</p>
+								<div class="price-list">
+									<span class="price">69.00</span>
+									<span class="oldprice">¥99.00</span>
+									<span class="num">100人学习</span>
+								</div>
+							</div>
+						</a>
+						<a class="jk-professional-item" href="#">
+							<img src="assets/images/professional/2.jpg" alt=""/>
+							<div class="item-con">
+								<p class="title">再见 Eclipse - Android Studio 高效开发</p>
+								<p class="date">7小时<span>|</span>1门课</p>
+								<div class="price-list">
+									<span class="price">69.00</span>
+									<span class="oldprice">¥99.00</span>
+									<span class="num">100人学习</span>
+								</div>
+							</div>
+						</a>
+						<a class="jk-professional-item" href="#">
+							<img src="assets/images/professional/3.jpg" alt=""/>
+							<div class="item-con">
+								<p class="title">再见 Eclipse - Android Studio 高效开发</p>
+								<p class="date">7小时<span>|</span>1门课</p>
+								<div class="price-list">
+									<span class="price">69.00</span>
+									<span class="oldprice">¥99.00</span>
+									<span class="num">100人学习</span>
+								</div>
+							</div>
+						</a>
+						<a class="jk-professional-item" href="#">
+							<img src="assets/images/professional/4.jpg" alt=""/>
+							<div class="item-con">
+								<p class="title">再见 Eclipse - Android Studio 高效开发</p>
+								<p class="date">7小时<span>|</span>1门课</p>
+								<div class="price-list">
+									<span class="price">69.00</span>
+									<span class="oldprice">¥99.00</span>
+									<span class="num">100人学习</span>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<!-- 专业精品课 end -->
+
+				<!-- 线下培训专区 start -->
+				<div class="jk-offline mt40">
+					<h2 class="jk-title">线下培训专区</h2>
+					<ul class="jk-offline-con">
+						<li class="clearfix">
+							<ul class="jk-offline-list jk-blue">
+								<li><a href="#" target="_blank">
+										<span class="ban">协议保就业班</span>
+										<h2 class="title">极客</h2>
+										<h2 class="title2">大牛程序员</h2>
+										<p class="desc">0基础，保就业</p>
+									</a>
+								</li>
+								<li><a href="#" target="_blank">
+										<span></span>
+										<p>不就业，不交钱</p>
+									</a>
+								</li>
+								<li><a href="#" target="_blank">
+										<span></span>
+										<p>不就业，不交钱</p>
+									</a>
+								</li>
+								<li><a href="#" target="_blank">
+										<span></span>
+										<p>不就业，不交钱</p>
+									</a>
+								</li>
+								<li><a href="#" target="_blank">
+										<span></span>
+										<p>不就业，不交钱</p>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="clearfix">
+							<ul class="jk-offline-list jk-red">
+								<li><a href="#" target="_blank">
+										<span class="ban">协议保就业班</span>
+										<h2 class="title">极客</h2>
+										<h2 class="title2">大牛程序员</h2>
+										<p class="desc">0基础，保就业</p>
+									</a>
+								</li>
+								<li><a href="#" target="_blank">
+										<span></span>
+										<p>不就业，不交钱</p>
+									</a>
+								</li>
+								<li><a href="#" target="_blank">
+										<span></span>
+										<p>不就业，不交钱</p>
+									</a>
+								</li>
+								<li><a href="#" target="_blank">
+										<span></span>
+										<p>不就业，不交钱</p>
+									</a>
+								</li>
+								<li><a href="#" target="_blank">
+										<span></span>
+										<p>不就业，不交钱</p>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- 线下培训专区 end -->
+
+				<!-- 职业学校 start -->
+				<div class="jk-school mt40">
+					<h2 class="jk-title">职业学校</h2>
+					<ul class="jk-school-list">
+						<li><a href="#" target="_blank">
+								<span class="icon-web"></span>
+								<p>Web 前端工程师</p>
+							</a>
+						</li>
+						<li><a href="#" target="_blank">
+								<span></span>
+								<p>Python Web 工程师</p>
+							</a>
+						</li>
+						<li><a href="#" target="_blank">
+								<span></span>
+								<p>Web 前端工程师</p>
+							</a>
+						</li>
+						<li><a href="#" target="_blank">
+								<span></span>
+								<p>Web 前端工程师</p>
+							</a>
+						</li>
+						<li><a href="#" target="_blank">
+								<span></span>
+								<p>Web 前端工程师</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- 职业学校 end -->
+
+				<!-- 会员课程 start -->
+				<div class="jk-vip mt40">
+					<h2 class="jk-title">会员课程</h2>
+					<ul class="common-horizontal-ul jk-vip-list clearfix">
+						<li><a href="#" target="_blank">
+								<img src="assets/images/vip/android.png" alt="">
+								<p>Android</p>
+								<span>90门课程</span>
+							</a>
+						</li>
+						<li><a href="#" target="_blank">
+								<img src="assets/images/vip/android.png" alt="">
+								<p>Android</p>
+								<span>90门课程</span>
+							</a>
+						</li>
+						<li><a href="#" target="_blank">
+								<img src="assets/images/vip/android.png" alt="">
+								<p>Android</p>
+								<span>90门课程</span>
+							</a>
+						</li>
+						<li><a href="#" target="_blank">
+								<img src="assets/images/vip/android.png" alt="">
+								<p>Android</p>
+								<span>90门课程</span>
+							</a>
+						</li>
+						<li><a href="#" target="_blank">
+								<img src="assets/images/vip/android.png" alt="">
+								<p>Android</p>
+								<span>90门课程</span>
+							</a>
+						</li>
+						<li><a href="#" target="_blank">
+								<img src="assets/images/vip/android.png" alt="">
+								<p>Android</p>
+								<span>90门课程</span>
+							</a>
+						</li>
+						<li><a href="#" target="_blank">
+								<img src="assets/images/vip/android.png" alt="">
+								<p>Android</p>
+								<span>90门课程</span>
+							</a>
+						</li>
+						<li><a href="#" target="_blank">
+								<img src="assets/images/vip/android.png" alt="">
+								<p>Android</p>
+								<span>90门课程</span>
+							</a>
+						</li>
+						<li><a href="#" target="_blank">
+								<img src="assets/images/vip/android.png" alt="">
+								<p>Android</p>
+								<span>90门课程</span>
+							</a>
+						</li>
+						<li><a href="#" target="_blank">
+								<img src="assets/images/vip/android.png" alt="">
+								<p>Android</p>
+								<span>90门课程</span>
+							</a>
+						</li>
+						<li><a href="#" target="_blank">
+								<img src="assets/images/vip/android.png" alt="">
+								<p>Android</p>
+								<span>90门课程</span>
+							</a>
+						</li>
+						<li><a href="#" target="_blank">
+								<img src="assets/images/vip/android.png" alt="">
+								<p>Android</p>
+								<span>90门课程</span>
+							</a>
+						</li>
+					</ul>
+					<a class="btn-more" href="#">全部会员课程</a>
+				</div>
+				<!-- 会员课程 end -->
+
+				<!-- 学员故事 start -->
+				<div class="jk-story mt40">
+					<h2 class="jk-title">学员故事</h2>
+					<!--焦点图 start-->
+					<div class="story-list" data-flickity='{ "imagesLoaded": true, "wrapAround": true,"groupCells": true, "autoPlay": 2000 }'>
+						<div class="story-con">
+							<a class="story-link" href="#" target="_blank">
+								<div class="story-desc">
+									<p>爆炸力学硕士转安卓开发，回顾自己从爆炸力学走向代码世界的历程，感触良多。庆幸自己没有留在研究所，程序员不断学习不断进步的感觉更有意义。稳定绝不代表停滞，历练才是我们的财富。爆炸力学硕士转安卓开发，回顾自己从爆炸力学走向代码世界的历程，感触良多。庆幸自己没有留在研究所，程序员不断学习不断进步的感觉更有意义。稳定绝不代表停滞，历练才是我们的财富。</p>
+									<span class="triangle"></span>
+								</div>
+								<div class="story-info">
+									<img class="story-img" src="assets/images/story/avatar.jpg" alt="">
+									<p class="story-name">张少龙</p>
+									<p class="story-job">入职 北京IBM</p>
+								</div>
+							</a>
+						</div>
+						<div class="story-con">
+							<a class="story-link" href="#" target="_blank">
+								<div class="story-desc">
+									<p>爆炸力学硕士转安卓开发，回顾自己从爆炸力学走向代码世界的历程，感触良多。庆幸自己没有留在研究所，程序员不断学习不断进步的感觉更有意义。稳定绝不代表停滞，历练才是我们的财富。爆炸力学硕士转安卓开发，回顾自己从爆炸力学走向代码世界的历程，感触良多。庆幸自己没有留在研究所，程序员不断学习不断进步的感觉更有意义。稳定绝不代表停滞，历练才是我们的财富。</p>
+									<span class="triangle"></span>
+								</div>
+								<div class="story-info">
+									<img class="story-img" src="assets/images/story/avatar.jpg" alt="">
+									<p class="story-name">张少龙</p>
+									<p class="story-job">入职 北京IBM</p>
+								</div>
+							</a>
+						</div>
+						<div class="story-con">
+							<a class="story-link" href="#" target="_blank">
+								<div class="story-desc">
+									<p>爆炸力学硕士转安卓开发，回顾自己从爆炸力学走向代码世界的历程，感触良多。庆幸自己没有留在研究所，程序员不断学习不断进步的感觉更有意义。稳定绝不代表停滞，历练才是我们的财富。爆炸力学硕士转安卓开发，回顾自己从爆炸力学走向代码世界的历程，感触良多。庆幸自己没有留在研究所，程序员不断学习不断进步的感觉更有意义。稳定绝不代表停滞，历练才是我们的财富。</p>
+									<span class="triangle"></span>
+								</div>
+								<div class="story-info">
+									<img class="story-img" src="assets/images/story/avatar.jpg" alt="">
+									<p class="story-name">张少龙</p>
+									<p class="story-job">入职 北京IBM</p>
+								</div>
+							</a>
+						</div>
+						<div class="story-con">
+							<a class="story-link" href="#" target="_blank">
+								<div class="story-desc">
+									<p>爆炸力学硕士转安卓开发，回顾自己从爆炸力学走向代码世界的历程，感触良多。庆幸自己没有留在研究所，程序员不断学习不断进步的感觉更有意义。稳定绝不代表停滞，历练才是我们的财富。爆炸力学硕士转安卓开发，回顾自己从爆炸力学走向代码世界的历程，感触良多。庆幸自己没有留在研究所，程序员不断学习不断进步的感觉更有意义。稳定绝不代表停滞，历练才是我们的财富。</p>
+									<span class="triangle"></span>
+								</div>
+								<div class="story-info">
+									<img class="story-img" src="assets/images/story/avatar.jpg" alt="">
+									<p class="story-name">张少龙</p>
+									<p class="story-job">入职 北京IBM</p>
+								</div>
+							</a>
+						</div>
+						<div class="story-con">
+							<a class="story-link" href="#" target="_blank">
+								<div class="story-desc">
+									<p>爆炸力学硕士转安卓开发，回顾自己从爆炸力学走向代码世界的历程，感触良多。庆幸自己没有留在研究所，程序员不断学习不断进步的感觉更有意义。稳定绝不代表停滞，历练才是我们的财富。爆炸力学硕士转安卓开发，回顾自己从爆炸力学走向代码世界的历程，感触良多。庆幸自己没有留在研究所，程序员不断学习不断进步的感觉更有意义。稳定绝不代表停滞，历练才是我们的财富。</p>
+									<span class="triangle"></span>
+								</div>
+								<div class="story-info">
+									<img class="story-img" src="assets/images/story/avatar.jpg" alt="">
+									<p class="story-name">张少龙</p>
+									<p class="story-job">入职 北京IBM</p>
+								</div>
+							</a>
+						</div>
+						<div class="story-con">
+							<a class="story-link" href="#" target="_blank">
+								<div class="story-desc">
+									<p>爆炸力学硕士转安卓开发，回顾自己从爆炸力学走向代码世界的历程，感触良多。庆幸自己没有留在研究所，程序员不断学习不断进步的感觉更有意义。稳定绝不代表停滞，历练才是我们的财富。爆炸力学硕士转安卓开发，回顾自己从爆炸力学走向代码世界的历程，感触良多。庆幸自己没有留在研究所，程序员不断学习不断进步的感觉更有意义。稳定绝不代表停滞，历练才是我们的财富。</p>
+									<span class="triangle"></span>
+								</div>
+								<div class="story-info">
+									<img class="story-img" src="assets/images/story/avatar.jpg" alt="">
+									<p class="story-name">张少龙</p>
+									<p class="story-job">入职 北京IBM</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!--焦点图 end-->
+				</div>
+				<!-- 学员故事 end -->
+
+				<!-- 合作企业 start -->
+				<div class="jk-partner mt40">
+					<h2 class="jk-title">合作企业</h2>
+					<ul class="common-horizontal-ul jk-partner-list clearfix">
+						<li><a href="#" target="_blank"></a></li>
+						<li><a href="#" target="_blank"></a></li>
+						<li><a href="#" target="_blank"></a></li>
+						<li><a href="#" target="_blank"></a></li>
+						<li><a href="#" target="_blank"></a></li>
+						<li><a href="#" target="_blank"></a></li>
+						<li><a href="#" target="_blank"></a></li>
+						<li><a href="#" target="_blank"></a></li>
+						<li><a href="#" target="_blank"></a></li>
+						<li><a href="#" target="_blank"></a></li>
+						<li><a href="#" target="_blank"></a></li>
+						<li><a href="#" target="_blank"></a></li>
+					</ul>
+					<a class="btn-more" href="#">更多合作企业</a>
+				</div>
+				<!-- 合作企业 end -->
+			</div>
+		</div>
+		<!-- 正文 end -->
+		
+		<!-- 底部 start -->
+		<div class="footer">
+			<div class="w-1000">
+				<div class="footer-nav clearfix">
+					<div class="footer-logo pull-left">
+						<img src="assets/images/footer/jk-logo-footer.png" alt="logo">
+						<p>极客学院，编程是一种信仰！</p>
+					</div>
+					<ul class="footer-navbar pull-left">
+						<li>职业学院
+							<ul>
+								<li><a href="#" target="_blank">Web前端工程师</a></li>
+								<li><a href="#" target="_blank">Python Web工程师</a></li>
+								<li><a href="#" target="_blank">Go语言工程师</a></li>
+								<li><a href="#" target="_blank">iOS工程师</a></li>
+								<li><a href="#" target="_blank">微信小程序工程师</a></li>
+							</ul>
+						</li>
+						<li>会员课程
+							<ul>
+								<li><a href="#" target="_blank">课程库</a></li>
+								<li><a href="#" target="_blank">知识体系图</a></li>
+								<li><a href="#" target="_blank">Go语言工程师</a></li>
+								<li><a href="#" target="_blank">iOS工程师</a></li>
+								<li><a href="#" target="_blank">微信小程序工程师</a></li>
+							</ul>
+						</li>
+						<li>极客社区
+							<ul>
+								<li><a href="#" target="_blank">极客社区</a></li>
+								<li><a href="#" target="_blank">Python Web工程师</a></li>
+								<li><a href="#" target="_blank">Go语言工程师</a></li>
+								<li><a href="#" target="_blank">iOS工程师</a></li>
+								<li><a href="#" target="_blank">微信小程序工程师</a></li>
+							</ul>
+						</li>
+						<li>其他
+							<ul>
+								<li><a href="#" target="_blank">关于我们</a></li>
+								<li><a href="#" target="_blank">加入我们</a></li>
+								<li><a href="#" target="_blank">Go语言工程师</a></li>
+								<li><a href="#" target="_blank">iOS工程师</a></li>
+								<li><a href="#" target="_blank">微信小程序工程师</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="footer-qcode pull-right">
+						<p>服务热线：400-678-8266</p>
+						<a class="qcode-btn qcode-iphone" href="">
+							<img class="app-img" src="assets/images/footer/app.png" alt="iPhone二维码">iPhone
+						</a>
+						<a class="qcode-btn qcode-android" href="">
+							<img class="app-img" src="assets/images/footer/app.png" alt="Android二维码">Android
+						</a>
+					</div>
+				</div>
+				<div class="copyright">
+					<p>Copyright © 2013-2017 jikexueyuan.com All Rights Reserved. 京ICP备11018032号-8 京公网安备11010802020210</p>
+					<div class="copyright-code">
+						<a href=""><img src="assets/images/footer/icon-down-sina.png" alt=""></a>
+						<a href=""><img src="assets/images/footer/icon-down-wechat.png" alt=""></a>
+					</div>
+					<a class="cert" href="#"><img src="assets/images/footer/cert.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+		<!-- 底部 end -->
+
+		<!-- 回到顶部 start -->
+		<div class="gotop">
+			<a class="btn top" href=""></a>
+			<a class="btn app" href="javascript:;"></a>
+			<div class="qcode-app"></div>
+		</div>
+		<!-- 回到顶部 end -->
+	</div>
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/plugins/flickity/flickity.min.js"></script>
+	<script type="text/javascript" src="assets/js/index.js"></script>
+	<script>
+		(function(){
+			$('.focus-list').mouseenter(function () {
+				$('.focus-list button').fadeIn(300);
+			})
+			$('.focus-list').mouseleave(function () {
+				$('.focus-list button').fadeOut(300);
+			})
+		})();
+	</script>
+</body>
+</html>
